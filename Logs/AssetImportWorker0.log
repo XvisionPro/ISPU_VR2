@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'ru' Physical Memory: 6091 MB
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ru' Physical Memory: 16215 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-G:\Unity\2021.3.11f1\Editor\Unity.exe
+C:\Program Files\Unity Hub\Unity 2021.3.11f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/ispuvr/ISPU_VR
+C:/Users/XacDacZloyKot/Desktop/Zavod/ISPU_VR2/ISPU_VR2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50520
-Successfully changed project path to: D:/ispuvr/ISPU_VR
-D:/ispuvr/ISPU_VR
+60972
+Successfully changed project path to: C:/Users/XacDacZloyKot/Desktop/Zavod/ISPU_VR2/ISPU_VR2
+C:/Users/XacDacZloyKot/Desktop/Zavod/ISPU_VR2/ISPU_VR2
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,110 +47,109 @@ D:/ispuvr/ISPU_VR
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 46.01 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 29.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
-[Subsystems] Discovering subsystems at path G:/Unity/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/ispuvr/ISPU_VR/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity Hub/Unity 2021.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/XacDacZloyKot/Desktop/Zavod/ISPU_VR2/ISPU_VR2/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon(TM) Vega 8 Graphics (ID=0x15d8)
-    Vendor:   ATI
-    VRAM:     3045 MB
-    Driver:   27.20.11044.5003
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   NVIDIA
+    VRAM:     6009 MB
+    Driver:   31.0.15.2849
 Initialize mono
-Mono path[0] = 'G:/Unity/2021.3.11f1/Editor/Data/Managed'
-Mono path[1] = 'G:/Unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'G:/Unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56372
+Mono path[0] = 'C:/Program Files/Unity Hub/Unity 2021.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity Hub/Unity 2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity Hub/Unity 2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: G:/Unity/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002647 seconds.
+Register platform support module: C:/Program Files/Unity Hub/Unity 2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005410 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 38.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 27.91 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.902 seconds
+- Completed reload, in  0.559 seconds
 Domain Reload Profiling:
-	ReloadAssembly (902ms)
-		BeginReloadAssembly (118ms)
+	ReloadAssembly (559ms)
+		BeginReloadAssembly (66ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (629ms)
-			LoadAssemblies (116ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (381ms)
+			LoadAssemblies (64ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (167ms)
+			SetupTypeCache (100ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (353ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (209ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (39ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (228ms)
-				ProcessInitializeOnLoadMethodAttributes (75ms)
+				RefreshPlugins (28ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (130ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003277 seconds.
+Registered in 0.003142 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.938 seconds
+- Completed reload, in  0.871 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1939ms)
-		BeginReloadAssembly (191ms)
+	ReloadAssembly (872ms)
+		BeginReloadAssembly (107ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1551ms)
-			LoadAssemblies (186ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (647ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (318ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (72ms)
-			SetupLoadedEditorAssemblies (934ms)
+			SetupTypeCache (181ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (318ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (408ms)
-				ProcessInitializeOnLoadMethodAttributes (435ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.39 seconds
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1685 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 19 unused Assets / (48.1 KB). Loaded Objects now: 2153.
-Memory consumption went from 72.5 MB to 72.5 MB.
-Total: 5.386100 ms (FindLiveObjects: 0.332900 ms CreateObjectMapping: 0.091200 ms MarkObjects: 4.821400 ms  DeleteObjects: 0.138100 ms)
+Memory consumption went from 72.6 MB to 72.5 MB.
+Total: 3.953600 ms (FindLiveObjects: 0.209900 ms CreateObjectMapping: 0.161500 ms MarkObjects: 3.486600 ms  DeleteObjects: 0.094700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -158,7 +157,173 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1742446.931576 seconds.
-  path: Assets/Textures/metal_frame_4-1K
-  artifactKey: Guid(b760d323a8ce6ee4984916d1e17a6e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/metal_frame_4-1K using Guid(b760d323a8ce6ee4984916d1e17a6e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70b8d4e35584a5634b6bf03da21bee74') in 0.013297 seconds 
+  Time since last request: 5174.338462 seconds.
+  path: Assets/Materials/worn-painted-metal-unity/worn-painted-metal_preview.jpg
+  artifactKey: Guid(90612a82633e2684abbda2faf3c03311) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/worn-painted-metal-unity/worn-painted-metal_preview.jpg using Guid(90612a82633e2684abbda2faf3c03311) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4a2ef713b70befcd65557451029eed6f') in 0.159984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Materials/MetalFrame.mat
+  artifactKey: Guid(46af7a15e00883b4ea7a944a0d51f573) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/MetalFrame.mat using Guid(46af7a15e00883b4ea7a944a0d51f573) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a652f205323130b315d1d679b413f506') in 0.044710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Textures/rusted-ribbed-metal-unity/rusty-ribbed-metal_metallic.psd
+  artifactKey: Guid(359fe89d1792f8c409a6a6c69c50c0eb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/rusted-ribbed-metal-unity/rusty-ribbed-metal_metallic.psd using Guid(359fe89d1792f8c409a6a6c69c50c0eb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f35f91cb8c4adc1d6837b6c928bdbe77') in 0.024768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Textures/rusted-ribbed-metal-unity/rusty-ribbed-metal_normal-ogl.png
+  artifactKey: Guid(e90e604ec4069ac4ea2e169d208f2bbb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/rusted-ribbed-metal-unity/rusty-ribbed-metal_normal-ogl.png using Guid(e90e604ec4069ac4ea2e169d208f2bbb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f88ab1cc47576a8700f33b8059bf762c') in 0.029699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Textures/beaten-up-metal1-unity/beaten-up-metal1-Metallic.psd
+  artifactKey: Guid(826511134562f8244bfec9f5c4984442) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/beaten-up-metal1-unity/beaten-up-metal1-Metallic.psd using Guid(826511134562f8244bfec9f5c4984442) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '29ab2a4d506b9e64bea3fc95dabb9c7f') in 0.022006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Krisha.mtl
+  artifactKey: Guid(f918ed107612ae949968ceca12664357) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Krisha.mtl using Guid(f918ed107612ae949968ceca12664357) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ed63990ff628603a962e09d1f6c19da5') in 0.011531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Textures/rusted-ribbed-metal-unity/rusty-ribbed-metal_preview.jpg
+  artifactKey: Guid(afc3e9e3df6f5e742834441ec3b80024) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/rusted-ribbed-metal-unity/rusty-ribbed-metal_preview.jpg using Guid(afc3e9e3df6f5e742834441ec3b80024) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '10bf6d46d2d02543ea78726c555f9d31') in 0.018366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Textures/metal_frame_4-1K/1K-metal_frame_4_normal.png
+  artifactKey: Guid(440e66d362fb7394d90cec01f51a8d50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/metal_frame_4-1K/1K-metal_frame_4_normal.png using Guid(440e66d362fb7394d90cec01f51a8d50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '48e4ecf6e1c4b34acee1a458cb228381') in 0.021426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Windows.obj
+  artifactKey: Guid(5057dc4a122b9794d89f90994b6a69a5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Windows.obj using Guid(5057dc4a122b9794d89f90994b6a69a5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '81a00c68aef57bc26651b23a8cbef672') in 0.050864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Materials/worn-painted-metal-unity/worn-painted-metal_height.png
+  artifactKey: Guid(d11f5c2911d45904eb9b0dea39144341) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/worn-painted-metal-unity/worn-painted-metal_height.png using Guid(d11f5c2911d45904eb9b0dea39144341) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f5b9dd4aa57b934533f8cd859d8e5de5') in 0.017965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Textures/beaten-up-metal1-unity/beaten-up-metal1-Normal-ogl.png
+  artifactKey: Guid(434d640b2bd9b7b44bd0e2287d48bcfa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/beaten-up-metal1-unity/beaten-up-metal1-Normal-ogl.png using Guid(434d640b2bd9b7b44bd0e2287d48bcfa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8b3c7510df309af6d313a0d1f1c5b8d6') in 0.021625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Textures/metalplatespainted-24.jpg
+  artifactKey: Guid(a894d693d0fa17943be8505eb9338c35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/metalplatespainted-24.jpg using Guid(a894d693d0fa17943be8505eb9338c35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '933d7f8b7df72e78de4c7926856272b6') in 0.028149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Textures/rusted-ribbed-metal-unity/rusty-ribbed-metal_ao.png
+  artifactKey: Guid(0e92173a44329634783f626e0802d709) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/rusted-ribbed-metal-unity/rusty-ribbed-metal_ao.png using Guid(0e92173a44329634783f626e0802d709) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ee04b0eb18d2e24c8eb1eb5dda8d9995') in 0.025940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ad7479e0779dfd583a5537e82f136ae7') in 0.012546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Krishka2.obj
+  artifactKey: Guid(d02416520cdf29d4b8a2dafe30b0bb0f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Krishka2.obj using Guid(d02416520cdf29d4b8a2dafe30b0bb0f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bf1e35ff36ae9972ea40534f9fc027e3') in 0.022316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Turbina.obj
+  artifactKey: Guid(89ab712e077aac84c928cc0a374d2100) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Turbina.obj using Guid(89ab712e077aac84c928cc0a374d2100) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4c19f22001d8aceb76c1e81a5b7189cc') in 0.025315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Materials/UnderFloor.mat
+  artifactKey: Guid(6c44fc5bea2f88845a8fd26e90a7a722) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/UnderFloor.mat using Guid(6c44fc5bea2f88845a8fd26e90a7a722) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c2c0edd0fbea38e6043163d3996fa184') in 0.017049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Textures/used-stainless-steel2-unity/used-stainless-steel2_height.png
+  artifactKey: Guid(a8006b5e0dfd80044a8c7432eb85fccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/used-stainless-steel2-unity/used-stainless-steel2_height.png using Guid(a8006b5e0dfd80044a8c7432eb85fccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8794b587f50f88b71f18b3a33425b4ef') in 0.021211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Textures/patchy_cement1_Unity/patchy_cement1_Normal.png
+  artifactKey: Guid(01231802ff333154ab5e7f59501eec0c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/patchy_cement1_Unity/patchy_cement1_Normal.png using Guid(01231802ff333154ab5e7f59501eec0c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9a896262e8046bc9cc1f3e21d6fef2cf') in 0.021779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Materials/Walls.mat
+  artifactKey: Guid(5a0ab120e10a8a049865ece31cd1135c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/Walls.mat using Guid(5a0ab120e10a8a049865ece31cd1135c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'eceb8c193dbb5bb2c164e71a32839a2b') in 0.028412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Textures/patchy_cement1_Unity/patchy_cement1_Ambient_Occlusion.png
+  artifactKey: Guid(7893cff50b87bbc418a55df2d2ebae66) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/patchy_cement1_Unity/patchy_cement1_Ambient_Occlusion.png using Guid(7893cff50b87bbc418a55df2d2ebae66) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '65f173f6542942ce5a3fe4a35ca1b9ac') in 0.022095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Materials/Test.mat
+  artifactKey: Guid(ba7455b9206db0246a5ecfaf10687030) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/Test.mat using Guid(ba7455b9206db0246a5ecfaf10687030) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '061327c2a087124c5e8a00e467aa5b9e') in 0.044299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Materials/UpperPeregorodki.mat
+  artifactKey: Guid(6f5c9430fa7c81248af0b6521f7d835c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/UpperPeregorodki.mat using Guid(6f5c9430fa7c81248af0b6521f7d835c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c5fef97edd7aee370aaa39835430747b') in 0.012070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Station2.obj
+  artifactKey: Guid(8e77446028c7ac549b6e1ea44ff8cfb4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Station2.obj using Guid(8e77446028c7ac549b6e1ea44ff8cfb4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fb68dee4d81e173fbd7983230fec29f1') in 0.034618 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
