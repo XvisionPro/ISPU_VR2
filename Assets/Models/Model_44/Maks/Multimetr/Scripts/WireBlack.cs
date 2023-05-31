@@ -20,15 +20,7 @@ public class WireBlack : MonoBehaviour
     [SerializeField]
     private ClickerV clickerV;
     [SerializeField]
-    private BlackButtonUI blackButtonUI;
-    [SerializeField]
-    private MaButtonUI maButtonClick;
-    [SerializeField]
-    private A10ButtonUI a10ButtonUI;
-    [SerializeField]
-    private COMButtomUI cOMButtomUI;
-    [SerializeField]
-    private VButtonUI vButtonUI;
+   
     public GameObject gameObject1;
     public bool WireBlackOn = false;
     [SerializeField]
@@ -55,70 +47,64 @@ public class WireBlack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((clickerMA.ClickMA || maButtonClick.clickmAButtonUI) && (Click1 || blackButtonUI.clickBlackButton))
+        if ((clickerMA.ClickMA) && (Click1))
         {
             ConnectTomA = true;
             anima.Play("WireStartMa");
             Click1 = false;
             clickerMA.ClickMA = false;
-            blackButtonUI.clickBlackButton = false;
-            maButtonClick.clickmAButtonUI = false;
         }
-        else if ((clicker10A.Click10A || a10ButtonUI.click10AButton) && (Click1 || blackButtonUI.clickBlackButton))
+        else if ((clicker10A.Click10A) && (Click1))
         {
             ConnectTo10A = true;
             anima.Play("WireStart10A");
             Click1 = false;
             clicker10A.Click10A = false;
-            a10ButtonUI.click10AButton = false;
-            blackButtonUI.clickBlackButton = false;
+
         }
-        else if ((clickerCOM.ClickCOM || cOMButtomUI.clickCOMButton) && (Click1 || blackButtonUI.clickBlackButton))
+        else if ((clickerCOM.ClickCOM) && (Click1))
         {
             ConnectToCOM = true;
             WireBlackOn = true;
             anima.Play("WireStartCOM");
             Click1 = false;
             clickerCOM.ClickCOM = false;
-            cOMButtomUI.clickCOMButton = false;
-            blackButtonUI.clickBlackButton = false;
+
         }
-        else if ((clickerV.ClickV || vButtonUI.clickVButton) && (Click1 || blackButtonUI.clickBlackButton))
+        else if ((clickerV.ClickV) && (Click1))
         {
             ConnectToV = true;
             anima.Play("WireStartV");
             Click1 = false;
             clickerV.ClickV = false;
-            vButtonUI.clickVButton = false;
-            blackButtonUI.clickBlackButton = false;
         }
-        else if ((Click1 || maButtonClick.clickmAButtonUI) && gameObject.transform.localPosition==new Vector3(1.53f, 0.96f, 4.8f))
+        else if ((Click1) && gameObject.transform.localPosition==new Vector3(1.53f, 0.96f, 4.8f))
         {
             ConnectTomA = false;
             anima.Play("WireBackMa");
             Click1 = false;
         }
-        else if ((Click1 || a10ButtonUI.click10AButton) && gameObject.transform.localPosition == new Vector3(1.548f, 1.07f, 6.26f))
+        else if ((Click1) && gameObject.transform.localPosition == new Vector3(1.548f, 1.07f, 6.26f))
         {
             ConnectTo10A = false;
             anima.Play("WireBack10A");
             Click1 = false;
         }
-        else if ((Click1 || cOMButtomUI.clickCOMButton) && gameObject.transform.localPosition == new Vector3(-0.248f, 1.02f, 5.591f))
+        else if ((Click1) && gameObject.transform.localPosition == new Vector3(-0.248f, 1.02f, 5.591f))
         {
             ConnectToCOM = false;
             anima.Play("WireBackCOM");
             WireBlackOn = false;
             Click1 = false;
         }
-        else if ((Click1 || vButtonUI.clickVButton) && gameObject.transform.localPosition == new Vector3(-2.178f, 0.932f, 5.535f))
+        else if ((Click1) && gameObject.transform.localPosition == new Vector3(-2.178f, 0.932f, 5.535f))
         {
             ConnectToV = false;
             anima.Play("WireBackV");
             Click1 = false;
         }
     }
-    private void OnMouseDown()
+    public void Click()
     {
         mA_Position = mA.localPosition;
         A10_Position = A10.localPosition;

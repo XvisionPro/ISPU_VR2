@@ -18,7 +18,7 @@ public class ClickerV : MonoBehaviour
     {
 
     }
-    private void OnMouseDown()
+    public void Click()
     {
         ClickV = true;
         Debug.Log("Второй элемент нажат");

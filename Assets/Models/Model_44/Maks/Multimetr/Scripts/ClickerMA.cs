@@ -18,7 +18,7 @@ public class ClickerMA : MonoBehaviour
     {
         
     }
-    private void OnMouseDown()
+    public void Click()
     {
         ClickMA = true;
         Debug.Log("Второй элемент нажат");

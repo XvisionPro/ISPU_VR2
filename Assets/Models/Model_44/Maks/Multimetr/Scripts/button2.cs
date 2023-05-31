@@ -10,6 +10,7 @@ public class button2 : MonoBehaviour
     private Vector3 needpos;
     public float distance = -0.3f;
     public bool work2 = false;
+    public bool flag = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,27 +18,32 @@ public class button2 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
 
-    }
-    private void OnMouseDown()
+    public void Click()
     {
-        if (work2 == false)
+        if (work2 == false && flag == true)
         {
             needpos = new Vector3(gameObject.transform.localPosition.x + distance, gameObject.transform.localPosition.y, gameObject.transform.localPosition.z);
             gameObject.transform.localPosition = needpos;
-            work2 = true;
+            StartCoroutine(time(0.1f));
         }
-        else if (work2 == true)
+        else if (work2 == true && flag == true)
         {
             gameObject.transform.localPosition = basepos;
-            work2 = false;
+            StartCoroutine(time(0.1f));
         }
         if (onChange != null)
         {
             onChange();
         }
+    }
+    IEnumerator time(float time)
+    {
+        flag = false;
+        yield return new WaitForSeconds(time);
+        work2 = !work2;
+        flag = true;
+
     }
     public void Button2Click(Action on_change)
     {

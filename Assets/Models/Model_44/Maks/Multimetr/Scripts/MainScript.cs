@@ -36,6 +36,8 @@ public class MainScript : MonoBehaviour
     void Start()
     {
         tm = (TextMesh)GameObject.Find("TextMultimetr").GetComponent<TextMesh>();
+        Debug.Log(tm.text);
+
         rotate.Rotating(KrytilkaChanged);
         rotate.Rotating(OnOff);
         button1.Button1Click(OnOff);
@@ -62,7 +64,7 @@ public class MainScript : MonoBehaviour
             tm.text = "000.00";
         else
             tm.text = " ";
-        Debug.Log("Включение =" + button1.work1);
+        //Debug.Log("Включение =" + button1.work1);
         if (button1.work1 == true && (blackProbe.ConnectToLeftClemma||blackProbe.ConnectToRightClemma)&&(redProbe.ConnectToRightClemma || redProbe.ConnectToLeftClemma) && (rotate.counter==2) && (wireBlack.ConnectToCOM && wireRed.ConnectToV))
         {
             tm.text = "000024";

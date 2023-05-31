@@ -17,7 +17,7 @@ public class Clicker10A : MonoBehaviour
     void Update()
     {
     }
-    private void OnMouseDown()
+    public void Click()
     {
         Click10A = true;
         Debug.Log("Третий элемент нажат");

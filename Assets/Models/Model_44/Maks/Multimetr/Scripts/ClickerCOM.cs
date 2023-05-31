@@ -18,7 +18,7 @@ public class ClickerCOM : MonoBehaviour
     {
 
     }
-    private void OnMouseDown()
+    public void Click()
     {
         ClickCOM = true;
         Debug.Log("Второй элемент нажат");
