@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2048
     height: 1060.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 3}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 540.80005
     height: 1010.80005
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 85
+  controlID: 94
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 238
+  controlID: 40
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -297,10 +297,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 211
-    y: 73
-    width: 1341
-    height: 596
+    x: 443.2
+    y: 73.6
+    width: 1062
+    height: 572.6
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -356,7 +356,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Prefabs
+    - Assets/Models/electric
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -364,16 +364,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 55
   m_LastFolders:
-  - Assets/Resources/Prefabs
+  - Assets/Models/electric
   m_LastFoldersGridSize: 55
   m_LastProjectPath: D:\UnityProjects\ISPU_VR2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 1ab20000
-    m_LastClickedID: 45594
-    m_ExpandedIDs: 0000000010b2000012b2000014b2000016b2000018b200001ab2000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 499.79993}
+    m_SelectedIDs: e09f0000
+    m_LastClickedID: 40928
+    m_ExpandedIDs: 000000008c9f00008e9f0000909f0000929f0000949f0000969f0000989f0000d69f000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -401,7 +401,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000010b2000012b2000014b2000016b2000018b200001ab20000
+    m_ExpandedIDs: 000000008c9f00008e9f0000909f0000929f0000949f0000969f0000989f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -494,9 +494,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e8b8ffff
-      m_LastClickedID: -18200
-      m_ExpandedIDs: 22fbffff865a0000625b0000ac5b0000e65b0000
+      m_SelectedIDs: 8ea00000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 0efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -824,9 +824,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -27.931747, y: 44.731342, z: 58.48632}
+    m_Target: {x: -25.120174, y: 48.416687, z: 58.181046}
     speed: 2
-    m_Value: {x: -27.931747, y: 44.731342, z: 58.48632}
+    m_Value: {x: -25.120174, y: 48.416687, z: 58.181046}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -872,13 +872,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.08525572, y: -0.7622832, z: 0.10261531, w: 0.6333491}
+    m_Target: {x: -0.10793377, y: -0.87628686, z: 0.23152465, w: -0.4085033}
     speed: 2
-    m_Value: {x: 0.085255496, y: -0.7622812, z: 0.10261504, w: 0.63334745}
+    m_Value: {x: 0.107933775, y: 0.87628686, z: -0.23152466, w: 0.4085033}
   m_Size:
-    m_Target: 1.4600253
+    m_Target: 6.8237133
     speed: 2
-    m_Value: 1.4600253
+    m_Value: 6.8237133
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1076,7 +1076,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 432
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

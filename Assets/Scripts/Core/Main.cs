@@ -75,7 +75,7 @@ public class Main : MonoBehaviour
 
     public void createScene()
     {
-		var station = AssetManager.getResPrefab("Station", Scene);
+		var station = AssetManager.getResPrefab("Electric", Scene);
     }
     
 	public void setOrbitCamera(Transform target)
