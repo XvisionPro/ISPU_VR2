@@ -59,7 +59,8 @@ public class Main : MonoBehaviour
 
 		var serverurl = Settings.serverurl;
 		//_networking = new Networking(serverurl, Settings.entryPoint, "sdf34hfnhv4556");
-	}
+		createScene();
+    }
 
 	void Awake()
 	{
@@ -71,7 +72,12 @@ public class Main : MonoBehaviour
 		if (WinCanvas == null) 
 			WinCanvas = GameObject.Find("WindowsCanvas");
 	}
-	
+
+    public void createScene()
+    {
+		var station = AssetManager.getResPrefab("Station", Scene);
+    }
+    
 	public void setOrbitCamera(Transform target)
     {
 		orbitCamera.target = target;
