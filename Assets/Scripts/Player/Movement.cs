@@ -71,7 +71,7 @@ public class Movement : MonoBehaviour
 
         currentSpeed = Mathf.Lerp(currentSpeed, walkingSpeed, Time.deltaTime * 3);
     }
-    private void Update()
+    private void FixedUpdate()
     {
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, Kamera1.transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask); //ѕровер€ем, находитс€ ли бл€дский объект на земле
@@ -108,6 +108,12 @@ public class Movement : MonoBehaviour
         {
             Walk();
         }
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 10;
+        }
+        else
+            speed = 5;
         //ѕ–џ∆ »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»
         ////≈сли зажат пробел, то в аниматоре отправл€ем сообщение тригеру, который активирует анимацию прыжка
         //if (Input.GetKeyDown(KeyCode.Space))

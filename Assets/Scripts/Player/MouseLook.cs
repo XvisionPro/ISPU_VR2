@@ -25,7 +25,7 @@ public class MouseLook : MonoBehaviour
     public float maxVertical = 45.0f;
     public float minVetrical = -45.0f;
     private float rotationX = 0;
-    private void Update()
+    private void FixedUpdate()
     {
         //Проверка оси движения персонажа
         if (axes==RotationPlayer.XandY)

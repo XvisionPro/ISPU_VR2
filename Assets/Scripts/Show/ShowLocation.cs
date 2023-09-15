@@ -10,7 +10,7 @@ public class ShowLocation : MonoBehaviour
     {
         foreach (BaseModel model in pribors)
         {
-            model.gameObject.SetActive(false);
+            model.gameObject.SetActive(true);
         }
     }
 
