@@ -25,30 +25,31 @@ public class MouseLook : MonoBehaviour
     public float maxVertical = 45.0f;
     public float minVetrical = -45.0f;
     private float rotationX = 0;
+
     private void FixedUpdate()
     {
         //Проверка оси движения персонажа
-        if (axes==RotationPlayer.XandY)
+        if (axes == RotationPlayer.XandY)
         {
             rotationX -= Input.GetAxis("Mouse Y") * RotatoinSpeedVertical;
             rotationX = Mathf.Clamp(rotationX, minVetrical, maxVertical);
 
-            float delta = Input.GetAxis("Mouse X")*RotatoinSpeedHorizont;
+            float delta = Input.GetAxis("Mouse X") * RotatoinSpeedHorizont;
             float rotationY = transform.localEulerAngles.y + delta;
 
             transform.localEulerAngles = new Vector3(rotationX, rotationY, 0);//Записываем в персонажа
         }
-        else if (axes==RotationPlayer.X)
+        else if (axes == RotationPlayer.X)
         {
-            transform.Rotate(0, Input.GetAxis("Mouse X")* RotatoinSpeedHorizont,0);
+            transform.Rotate(0, Input.GetAxis("Mouse X") * RotatoinSpeedHorizont, 0);
         }
-        else if (axes==RotationPlayer.Y)
+        else if (axes == RotationPlayer.Y)
         {
             rotationX -= Input.GetAxis("Mouse Y") * RotatoinSpeedVertical;
             rotationX = Mathf.Clamp(rotationX, minVetrical, maxVertical);
 
             float rotationY = transform.localEulerAngles.y; //Сохранение угла поворота по оси Y
-            transform.localEulerAngles = new Vector3(rotationX,rotationY, 0);
+            transform.localEulerAngles = new Vector3(rotationX, rotationY, 0);
         }
     }
 }

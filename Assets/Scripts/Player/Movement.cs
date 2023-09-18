@@ -81,12 +81,12 @@ public class Movement : MonoBehaviour
         }
         if(Input.GetKey(KeyCode.Alpha3)) 
         {
-            needpos3d = new Vector3(0f, 2.24f, -3.5f);
+            needpos3d = new Vector3(0f, 2.063f, -3.379f);
             Kamera1.transform.localPosition = Vector3.Lerp(a: basepos, b: needpos3d, t: 5f);
         }
         if (Input.GetKey(KeyCode.Alpha1))
         {
-            needpos3d = new Vector3(0f, 1.24f, 0.22f);
+            needpos3d = new Vector3(0f, 1.063f, 0.379f);
             Kamera1.transform.localPosition = Vector3.Lerp(a: basepos, b: needpos3d, t: 5f);
         }
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
@@ -108,26 +108,28 @@ public class Movement : MonoBehaviour
         {
             Walk();
         }
+
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            speed = 10;
+            speed = 5;
         }
         else
-            speed = 5;
+            speed = 2;
+
         //ѕ–џ∆ »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»
         ////≈сли зажат пробел, то в аниматоре отправл€ем сообщение тригеру, который активирует анимацию прыжка
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    anim.SetTrigger("Jump");
-        //}
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            anim.SetTrigger("Jump");
+        }
         float deltaX = Input.GetAxis("Horizontal");
         float deltaZ = Input.GetAxis("Vertical");
         Vector3 move = transform.right * deltaX + transform.forward * deltaZ; //«аписываем в вектор движени€ нажати€ наших кномпочек
         CharacterController.Move(move * speed * Time.deltaTime); //«адаЄм скорость персонажу
-        //if (Input.GetButtonDown("Jump") && isGrounded)
-        //{
-        //    velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-        //}
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        }
         velocity.y += gravity * Time.deltaTime;//«адаЄм гравитейшион персонажу
         CharacterController.Move(velocity * Time.deltaTime);
     }
