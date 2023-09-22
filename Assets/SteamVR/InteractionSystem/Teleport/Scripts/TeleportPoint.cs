@@ -18,17 +18,19 @@ namespace Valve.VR.InteractionSystem
 		public enum TeleportPointType
 		{
 			MoveToLocation,
-			SwitchToNewScene
+			SwitchToNewScene,
+			TeleportToPoint
 		};
 
 		//Public variables
-		public TeleportPointType teleportType = TeleportPointType.MoveToLocation;
+		public TeleportPointType teleportType = TeleportPointType.TeleportToPoint;
 		public string title;
 		public string switchToScene;
 		public Color titleVisibleColor;
 		public Color titleHighlightedColor;
 		public Color titleLockedColor;
 		public bool playerSpawnPoint = false;
+		public Vector3 TeleportingPoint;
 
 		//Private data
 		private bool gotReleventComponents = false;
@@ -183,6 +185,13 @@ namespace Valve.VR.InteractionSystem
 							animation.clip = animation.GetClip( switchSceneAnimation );
 						}
 						break;
+					case TeleportPointType.TeleportToPoint:
+                        {
+							pointIcon = moveLocationIcon;
+
+							animation.clip = animation.GetClip(moveLocationAnimation);
+						}
+						break;
 				}
 			}
 
@@ -304,6 +313,12 @@ namespace Valve.VR.InteractionSystem
 						{
 							moveLocationIcon.gameObject.SetActive( false );
 							switchSceneIcon.gameObject.SetActive( true );
+						}
+						break;
+					case TeleportPointType.TeleportToPoint:
+						{
+							moveLocationIcon.gameObject.SetActive(true);
+							switchSceneIcon.gameObject.SetActive(false);
 						}
 						break;
 				}

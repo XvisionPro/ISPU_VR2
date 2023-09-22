@@ -26,10 +26,11 @@ public class Movement : MonoBehaviour
     private Vector3 needpos;
     private Vector3 needpos3d;
     private Vector3 basepos;
-    private bool work=false;
     bool isGrounded; //Проверка на землю
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked; // Отключаем наш указатель при игре, ШОБ НЕ МЕШАЛСЯ
+        Cursor.visible = false;
         anim = GetComponent<Animator>();
         CharacterController = GetComponent<CharacterController>(); // Получаем, собственно, сам объект
         if (CharacterController == null) //Проверка его наличия (объекта)
@@ -78,25 +79,14 @@ public class Movement : MonoBehaviour
         {
             velocity.y = -2f;
         }
-        if (Input.GetKey(KeyCode.Escape))
+        if(Input.GetKey(KeyCode.Alpha3)) 
         {
-            Cursor.lockState = CursorLockMode.Locked; // Отключаем наш указатель при игре, ШОБ НЕ МЕШАЛСЯ
-            Cursor.visible = false;
-
-        }
-        if (Input.GetKey(KeyCode.Tab))
-        {
-            Cursor.lockState = CursorLockMode.Confined; // Отключаем наш указатель при игре, ШОБ НЕ МЕШАЛСЯ
-            Cursor.visible = true;
-        }
-        if (Input.GetKey(KeyCode.Alpha3)) 
-        {
-            needpos3d = new Vector3(0f, 2.063f, -3.379f);
+            needpos3d = new Vector3(0f, 2.24f, -3.5f);
             Kamera1.transform.localPosition = Vector3.Lerp(a: basepos, b: needpos3d, t: 5f);
         }
         if (Input.GetKey(KeyCode.Alpha1))
         {
-            needpos3d = new Vector3(0f, 1.063f, 0.379f);
+            needpos3d = new Vector3(0f, 1.24f, 0.22f);
             Kamera1.transform.localPosition = Vector3.Lerp(a: basepos, b: needpos3d, t: 5f);
         }
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
