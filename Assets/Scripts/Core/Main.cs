@@ -24,6 +24,9 @@ public class Main : MonoBehaviour
 	public OrbitCamera orbitCamera;
     public GameObject Player;
 
+    public List<GameObject> Objects;
+    public List<GameObject> VRObjects;
+
     public  NetworkConnection network;
 
 	private AssetManager _assetManager { get; set; }
@@ -59,7 +62,8 @@ public class Main : MonoBehaviour
 
 		var serverurl = Settings.serverurl;
 		//_networking = new Networking(serverurl, Settings.entryPoint, "sdf34hfnhv4556");
-		createScene();
+		//createScene();
+		WindowStart.show();
     }
 
 	void Awake()
@@ -73,9 +77,12 @@ public class Main : MonoBehaviour
 			WinCanvas = GameObject.Find("WindowsCanvas");
 	}
 
-    public void createScene()
+    public void createScene(List<GameObject> objects)
     {
-		var station = AssetManager.getResPrefab("Electric", Scene);
+		foreach (var obj in objects)
+		{
+            var station = AssetManager.getResPrefab(obj, Scene);
+        }
     }
     
 	public void setOrbitCamera(Transform target)

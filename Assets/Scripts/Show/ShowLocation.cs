@@ -24,6 +24,6 @@ public class ShowLocation : MonoBehaviour
 
         Main.Hud.onShowPanel(false);
         Main.ModelController.ClearMesure();
-        Main.Instance.Player.SetActive(true);
+        //Main.Instance.Player.SetActive(true);
     }
 }

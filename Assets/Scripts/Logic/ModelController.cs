@@ -179,8 +179,7 @@ namespace Assets.Scripts.Logic
 			curModel.setLocation(0);
 			Main.Hud.onShowPanel(false);
 			ClearMesure();
-			Main.Instance.Player.SetActive(true);
-
+			//Main.Instance.Player.SetActive(true);
         }
 
 		public static BaseModel isModelOpen(string name)

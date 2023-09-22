@@ -346,6 +346,12 @@ namespace Base
             return prefabInstance;
         }
 
+        public static GameObject getResPrefab(GameObject prefab, Transform parent = null)
+        {
+            GameObject prefabInstance = Main.Instantiate(prefab, parent);
+            return prefabInstance;
+        }
+        
 		public void getImgStreamingAssets(string path, Image image)
 		{
 			var fullPath = Application.streamingAssetsPath + path + ".png";
