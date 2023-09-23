@@ -34,6 +34,8 @@ public class WindowStart : CommonWindow
         btnStart.onClick.AddListener(() =>
         {
             Main.Instance.createScene(Main.Instance.Objects);
+            var gameObject = GameObject.Find("Menu");
+            gameObject.SetActive(false);
             onClose();
         });
 
@@ -41,7 +43,10 @@ public class WindowStart : CommonWindow
         btnStartVR.onClick.AddListener(() =>
         {
             Main.Instance.createScene(Main.Instance.VRObjects);
+            var gameObject = GameObject.Find("Menu");
+            gameObject.SetActive(false);
             onClose();
         });
+
     }
 }
