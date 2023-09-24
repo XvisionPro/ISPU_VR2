@@ -26,9 +26,12 @@ public class Movement : MonoBehaviour
     private Vector3 needpos;
     private Vector3 needpos3d;
     private Vector3 basepos;
+    [SerializeField]
+    public MouseLook mouseLook;
     bool isGrounded; //Проверка на землю
     private void Start()
     {
+        mouseLook = GameObject.Find("Main Camera").GetComponent<MouseLook>();
         Cursor.lockState = CursorLockMode.Locked; // Отключаем наш указатель при игре, ШОБ НЕ МЕШАЛСЯ
         Cursor.visible = false;
         anim = GetComponent<Animator>();
@@ -44,6 +47,7 @@ public class Movement : MonoBehaviour
         if (camera == null)
         {
             camera = GameObject.Find("Main Camera").GetComponent<Camera>();
+            
         }
     }
     private void OnGUI() // Создание прицела
@@ -81,13 +85,17 @@ public class Movement : MonoBehaviour
         }
         if(Input.GetKey(KeyCode.Alpha3)) 
         {
+            mouseLook.maxVertical = 40.0f;
+            mouseLook.minVetrical = -40.0f;
             needpos3d = new Vector3(0f, 2.24f, -3.5f);
             Kamera1.transform.localPosition = Vector3.Lerp(a: basepos, b: needpos3d, t: 5f);
         }
         if (Input.GetKey(KeyCode.Alpha1))
         {
-            needpos3d = new Vector3(0f, 1.24f, 0.22f);
+            needpos3d = new Vector3(0f, 1.063f, 0.379f);
             Kamera1.transform.localPosition = Vector3.Lerp(a: basepos, b: needpos3d, t: 5f);
+            mouseLook.maxVertical = 60.0f;
+            mouseLook.minVetrical = -60.0f;
         }
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
         {
