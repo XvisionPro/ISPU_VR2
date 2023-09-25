@@ -63,8 +63,12 @@ public class Main : MonoBehaviour
 		var serverurl = Settings.serverurl;
 		//_networking = new Networking(serverurl, Settings.entryPoint, "sdf34hfnhv4556");
 		//createScene();
-		WindowStart.show();
-    }
+		/*WindowConnect.show(() => {
+			WindowStart.show();
+		});*/
+
+		Delay(1f, () => { OnConnect(); });
+	}
 
 	void Awake()
 	{
@@ -101,6 +105,8 @@ public class Main : MonoBehaviour
 			ModelController.isConnected = true;
 
 			Delay(1f, () => { network.send(AllTypes.MESS_COMM + ":" + AllTypes.COMM_INIT); });
+			WindowStart.show();
+			Main.Instance.location.init();
 		});
 	}
 

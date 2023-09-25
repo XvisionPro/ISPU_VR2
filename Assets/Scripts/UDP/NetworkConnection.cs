@@ -27,7 +27,7 @@ public class NetworkConnection: MonoBehaviour
         if (isEmulation)
         {
             OutPort = 7001;
-            OutHostName = "192.168.1.70";
+            OutHostName = "10.21.12.62";
         }
 
         if (TCPConnection)

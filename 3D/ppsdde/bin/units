@@ -1,0 +1,126 @@
+; Undimension value. Always the first unit
+u/d
+; Default measurement. Always the 2-nd measurement
+def
+; Temperature units
+C
+ГрадC=C
+ГРАД=C
+град=C
+K=C-273
+ГрадK=K
+; VolFlow units
+M**3/S
+m.cub/s=1M**3/S
+МКуб/Сек=M**3/S
+M**3/H=0.000277777M**3/S
+МКуб/Час=M**3/H
+kM**3/H=1000M**3/H
+; Flow
+nm.cub/h
+НМ3/ЧАС=nm.cub/h
+НмКуб/Час=nm.cub/h
+nm.cub/s=3600nm.cub/h
+нмКуб/Сек=nm.cub/s
+т.нм3/ч=nm.cub/h
+kNmCub/h=1000nm.cub/h
+10xНмКуб/Час=kNmCub/h
+; MassFlow Units
+tn/h
+тон/час=tn/h
+kg/s=3.6tn/h
+кг/сек=kg/s
+т/ч=tn/h
+Т/Ч=tn/h
+; Pressure units
+mPa
+MPa=mPa
+МПА(абс)=mPa
+BAR=0.1mPa
+MBAR=0.001BAR
+Pa=0.000001mPa
+Паскаль=Pa
+kG/cM**2=0.098mPa
+кгс/см2=kG/cM**2+1
+кгс/м2=0.0001кгс/см2
+kg/sq.cm=0.098mPa
+Кг/СмКв=kg/sq.cm
+gKg/SqCm=kg/sq.cm+1
+ата=kg/sq.cm
+gMPa=9.8gKg/SqCm
+gPa=0.000001gMPa
+vac=-1gKg/SqCm
+mm.H2O=9.80665Pa
+МмВодСт=mm.H2O
+gKg/SqM=mm.H2O
+rmm.H2O=mm.H2O+9806.65
+rareH2O=-1mm.H2O
+MercuryMm=0.00135951kG/cM**2
+МмРтутСт=MercuryMm
+MercuryMmVac=0.00135951vac
+МПА=МПА(абс)+0.098
+КПА(абс)=0.001МПА(абс)
+КПА=0.001МПА
+ПА=0.102rmm.H2O
+КПа=1000ПА
+; Distance units
+m
+м=m
+km=1000m
+км=km
+cm=0.01m
+см=cm
+mm=0.1cm
+ММ=0.1cm
+мм=ММ
+dm=0.1m
+; enthalpy
+kkal/kg
+ккал/кг=kkal/kg
+kJ/kg=4.1868kkal/kg
+;  percentage
+%%
+Процент=%%
+;  capacity
+kwt
+киловатт=kwt
+mwt=1000kwt
+КВТ=kwt
+МВТ=1000kwt
+мегаватт=mwt
+; power generated per hour
+kwh
+mwh=1000kwh
+;  rotations
+Hz
+частота=Hz
+rot/min=0.016667Hz
+об/мин=0.016667Hz
+ОБ/М=0.016667Hz
+ГЦ=Hz
+;  volume
+m.cub
+метрКуб=m.cub
+; Current
+a
+A=a
+ампер=a
+kA=1000a
+килоампер=kA
+; Voltage
+B
+вольт=B
+kB=1000B
+КВ=kB
+киловольт=kB
+; RCapacity
+MBAr
+; EnergyT - Energy Transfer (Передача энергии)
+Gkal/h
+Гкал/ч=Gkal/h
+; Speed units 
+m/s
+м/с=m/s
+мм/с=0.001m/s
+mm/s=0.001m/s
+

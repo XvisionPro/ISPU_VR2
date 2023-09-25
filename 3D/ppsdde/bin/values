@@ -1,0 +1,42 @@
+; Not a physical value. Should be the first defenition
+НеФизич    : u/d
+NAFV       : u/d
+Temperature: C
+temperature=Temperature
+Pressure   : kG/cM**2
+pressure   = Pressure
+deltaP     = Pressure
+slPressure = Pressure
+airPressure = Pressure
+Vacuum     = Pressure
+VolFlow    : M**3/S
+Flow       : nm.cub/s
+MassFlow   : kg/s
+Distance   : m
+Level      = Distance
+Level_cm   = Distance
+Level_mm   = Distance
+expansion  = Distance
+enthalpy   : kkal/kg
+rotations  : rot/min
+capacity   : kwt
+hCapacity  = capacity
+production : mwh
+percentage : %%
+MGV        : %%
+GV         : %%
+CV         : %%
+volume     : m.cub
+Current    : a
+Voltage    : B
+RCapacity  : MBAr
+EnergyT    : Гкал/ч
+Температура=Temperature
+Давление   = Pressure
+Уровень    = Distance
+Расширение = Distance
+Энтальпия  = enthalpy
+Обороты    = rotations
+Ток        = Current
+Напряжение = Voltage
+Speed      : m/s
