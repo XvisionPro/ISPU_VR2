@@ -20,7 +20,9 @@ public class BlackProbeScript : MonoBehaviour
     private Animation animat;
     public bool ConnectToRightClemma=false;
     public bool ConnectToLeftClemma = false;
+    [SerializeField]
     public bool ConnectToRightClemmaRozetki = false;
+    [SerializeField]
     public bool ConnectToLeftClemmaRozetki = false;
     [SerializeField]
     private GameObject BlackProbe;
@@ -95,7 +97,7 @@ public class BlackProbeScript : MonoBehaviour
             onChange();
         }
     }
-    private void OnMouseDown()
+    public void OnMouseDown()
     { 
         Click = true;
         Debug.Log("Первый элемент нажат");

@@ -95,7 +95,7 @@ public class RedProbeScript : MonoBehaviour
             onChange();
         }
     }
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         Click = true;
         Debug.Log("Первый элемент нажат");

@@ -18,7 +18,7 @@ public class LeftClemmaRozetki : MonoBehaviour
     {
 
     }
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         ClickLeftClemmaRozetka = true;
         Debug.Log("Второй элемент нажат");
