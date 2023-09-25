@@ -34,7 +34,7 @@ public class rotate : MonoBehaviour
         {
             onChange();
         }
-        //Debug.Log("Сейчас режим"+counter);
+        Debug.Log("Сейчас режим"+counter);
 
     }
     public void Rotationleft()
@@ -50,7 +50,7 @@ public class rotate : MonoBehaviour
         {
             onChange();
         }
-        //Debug.Log("Сейчас режим" + counter);
+        Debug.Log("Сейчас режим" + counter);
     }
     public void Rotating(Action on_change)
     {

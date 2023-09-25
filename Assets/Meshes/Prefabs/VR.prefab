@@ -2187,7 +2187,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3362175379722103792}
         m_TargetAssemblyTypeName: rotateleft, Assembly-CSharp
-        m_MethodName: Click
+        m_MethodName: RotaLeft
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2292,19 +2292,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3362175379722103792}
-        m_TargetAssemblyTypeName: rotateleft, Assembly-CSharp
-        m_MethodName: Click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &3362175379722103792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2546,19 +2534,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7478334529312544457}
-        m_TargetAssemblyTypeName: WireRed, Assembly-CSharp
-        m_MethodName: Click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &684895973332626236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2568,6 +2544,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4670412772618714980}
+  - component: {fileID: 7358577132785033434}
   - component: {fileID: 7337338936379379713}
   m_Layer: 0
   m_Name: krytilka
@@ -2594,6 +2571,20 @@ Transform:
   m_Father: {fileID: 2316453165331158040}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -45.27, z: 0}
+--- !u!114 &7358577132785033434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684895973332626236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71f68e92f400e554a9d6de545e3bc35b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 15
+  counter: 0
 --- !u!114 &7337338936379379713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8955,19 +8946,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5402036266829626159}
-        m_TargetAssemblyTypeName: rotateright, Assembly-CSharp
-        m_MethodName: Click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1304830707805389633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8985,7 +8964,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5402036266829626159}
         m_TargetAssemblyTypeName: rotateright, Assembly-CSharp
-        m_MethodName: Click
+        m_MethodName: RotaRight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11730,19 +11709,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6897796284292179553}
-        m_TargetAssemblyTypeName: button1, Assembly-CSharp
-        m_MethodName: Trunik2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &4361010976606628331
 GameObject:
   m_ObjectHideFlags: 0
@@ -17881,19 +17848,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1614892615113442647}
-        m_TargetAssemblyTypeName: button2, Assembly-CSharp
-        m_MethodName: Click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &7410054592784458828
 GameObject:
   m_ObjectHideFlags: 0
@@ -19563,19 +19518,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4695508019591675488}
-        m_TargetAssemblyTypeName: RedProbeScript, Assembly-CSharp
-        m_MethodName: OnMouseDown
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &7974856043013927209
 GameObject:
   m_ObjectHideFlags: 0
@@ -20690,19 +20633,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3441616861148095505}
-        m_TargetAssemblyTypeName: BlackProbeScript, Assembly-CSharp
-        m_MethodName: OnMouseDown
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &8340570873935261748
 GameObject:
   m_ObjectHideFlags: 0
@@ -21963,19 +21894,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3270116544767829867}
-        m_TargetAssemblyTypeName: WireBlack, Assembly-CSharp
-        m_MethodName: Click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &8709130932908735044
 GameObject:
   m_ObjectHideFlags: 0

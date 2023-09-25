@@ -19,7 +19,7 @@ public class rotateleft : MonoBehaviour
     {
 
     }
-    public void Click()
+    public void RotaLeft()
     {
         rot.Rotationleft();
     }
