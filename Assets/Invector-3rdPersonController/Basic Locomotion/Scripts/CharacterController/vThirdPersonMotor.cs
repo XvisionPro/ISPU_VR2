@@ -1094,11 +1094,11 @@ namespace Invector.vCharacterController
 
         protected virtual void CheckForAutoCrouch(Collider other)
         {
-            if (other.gameObject.CompareTag("AutoCrouch"))
-            {
-                autoCrouch = true;
-                inCrouchArea = true;
-            }
+            //if (other.gameObject.CompareTag("AutoCrouch"))
+            //{
+            //    autoCrouch = true;
+            //    inCrouchArea = true;
+            //}
         }
 
         #endregion
