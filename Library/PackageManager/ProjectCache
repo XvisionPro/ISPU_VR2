@@ -1,39 +1,39 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: D:/Unity/ISPU_VR2/Packages/manifest.json
+    m_FilePath: C:/Users/trenager/Documents/GitHub/ISPU_VR2/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638312773973912740
-    m_Hash: 100389462
+      ticks: 638343601848868586
+    m_Hash: 4091289540
   m_LockFileStatus:
-    m_FilePath: D:/Unity/ISPU_VR2/Packages/packages-lock.json
+    m_FilePath: C:/Users/trenager/Documents/GitHub/ISPU_VR2/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638312773973912740
-    m_Hash: 1998456821
+      ticks: 638343601848915816
+    m_Hash: 3596000433
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus:
-  - m_FilePath: D:\Unity\ISPU_VR2\Assets\SteamVR\OpenVRUnityXRPackage\Editor\com.valvesoftware.unity.openvr-1.1.4.tgz/package.json
+  - m_FilePath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Assets\SteamVR\OpenVRUnityXRPackage\Editor\com.valvesoftware.unity.openvr-1.1.4.tgz/package.json
     m_PathExists: 0
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
       ticks: 0
     m_Hash: 0
-  - m_FilePath: D:\Unity\ISPU_VR2\Assets\SteamVR\OpenVRUnityXRPackage\Editor\com.valvesoftware.unity.openvr-1.1.4.tgz
+  - m_FilePath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Assets\SteamVR\OpenVRUnityXRPackage\Editor\com.valvesoftware.unity.openvr-1.1.4.tgz
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638311533106848740
+      ticks: 638325455829978120
     m_Hash: 2919789393
-m_ProjectPath: D:/Unity/ISPU_VR2/Packages
+m_ProjectPath: C:/Users/trenager/Documents/GitHub/ISPU_VR2/Packages
 m_EditorVersion: 2022.3.1f1 (f18e0c1b5784)
 m_ResolvedPackages:
 - packageId: com.unity.ai.navigation@1.1.3
@@ -41,7 +41,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.1.3
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.ai.navigation@1.1.3
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.ai.navigation@1.1.3
   assetPath: Packages/com.unity.ai.navigation
   name: com.unity.ai.navigation
   displayName: AI Navigation
@@ -66,11 +66,15 @@ m_ResolvedPackages:
     - 1.1.1
     - 1.1.3
     - 1.1.4
+    - 1.1.5
     - 2.0.0-pre.3
+    - 2.0.0-pre.4
+    - 2.0.0
     compatible:
     - 1.1.3
     - 1.1.4
-    recommended: 1.1.4
+    - 1.1.5
+    recommended: 1.1.5
     deprecated: []
   dependencies:
   - name: com.unity.modules.ai
@@ -110,7 +114,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.4
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.collab-proxy@2.0.4
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.collab-proxy@2.0.4
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -196,6 +200,7 @@ m_ResolvedPackages:
     - 2.1.0-preview.5
     - 2.1.0-preview.6
     - 2.1.0
+    - 2.2.0
     compatible:
     - 2.0.4
     - 2.0.5
@@ -204,6 +209,7 @@ m_ResolvedPackages:
     - 2.1.0-preview.5
     - 2.1.0-preview.6
     - 2.1.0
+    - 2.2.0
     recommended: 2.0.7
     deprecated: []
   dependencies: []
@@ -249,12 +255,123 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+- packageId: com.unity.formats.fbx@4.2.1
+  testable: 0
+  isDirectDependency: 1
+  version: 4.2.1
+  source: 1
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.formats.fbx@4.2.1
+  assetPath: Packages/com.unity.formats.fbx
+  name: com.unity.formats.fbx
+  displayName: FBX Exporter
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: "The Unity FBX Exporter package makes it easy to send geometry and
+    animation to any application that supports the FBX format and send them back
+    to Unity with minimal effort.\n\nIn particular, this round-trip workflow enables
+    you to export Unity Scenes to FBX files, import them into Autodesk\xAE Maya\xAE,
+    Autodesk\xAE Maya LT\u2122, or Autodesk\xAE 3ds Max\xAE using an artist-friendly
+    interface, export Unity-ready FBX geometry and animation, and safely merge your
+    changes back into those Assets to continue your work in Unity."
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 2.0.1-preview.2
+    - 2.0.1-preview.3
+    - 2.0.1-preview.4
+    - 2.0.1-preview.5
+    - 2.0.1-preview.11
+    - 2.0.2-preview.1
+    - 2.0.3-preview.3
+    - 3.0.0-preview.2
+    - 3.0.1-preview.2
+    - 3.1.0-preview.1
+    - 3.2.0-preview.2
+    - 3.2.1-preview.2
+    - 4.0.0-pre.1
+    - 4.0.0-pre.4
+    - 4.0.1
+    - 4.1.0-pre.2
+    - 4.1.0
+    - 4.1.1
+    - 4.1.2
+    - 4.1.3
+    - 4.2.0-pre.1
+    - 4.2.0
+    - 4.2.1
+    - 5.0.0-pre.1
+    - 5.0.0
+    - 5.1.0-pre.1
+    - 5.1.0
+    compatible:
+    - 4.2.1
+    - 5.0.0-pre.1
+    - 5.0.0
+    - 5.1.0-pre.1
+    - 5.1.0
+    recommended: 4.2.1
+    deprecated: []
+  dependencies:
+  - name: com.unity.timeline
+    version: 1.7.1
+  - name: com.autodesk.fbx
+    version: 4.2.1
+  resolvedDependencies:
+  - name: com.unity.timeline
+    version: 1.7.4
+  - name: com.unity.modules.director
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.modules.particlesystem
+    version: 1.0.0
+  - name: com.autodesk.fbx
+    version: 4.2.1
+  keywords:
+  - fbx
+  - animation
+  - modeling
+  - maya
+  - max
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 638089453510000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.formats.fbx@4.2/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.formats.fbx.git
+    revision: 877a978d1923ee725cad1883350d6effee574951
+    path: 
+  unityLifecycle:
+    version: 4.2.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.ide.rider@3.0.21
   testable: 0
   isDirectDependency: 1
   version: 3.0.21
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.ide.rider@3.0.21
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.ide.rider@3.0.21
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -310,12 +427,14 @@ m_ResolvedPackages:
     - 3.0.22
     - 3.0.24
     - 3.0.25
+    - 3.0.26
     compatible:
     - 3.0.21
     - 3.0.22
     - 3.0.24
     - 3.0.25
-    recommended: 3.0.25
+    - 3.0.26
+    recommended: 3.0.26
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -355,7 +474,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.18
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.ide.visualstudio@2.0.18
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.ide.visualstudio@2.0.18
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -395,11 +514,13 @@ m_ResolvedPackages:
     - 2.0.18
     - 2.0.20
     - 2.0.21
+    - 2.0.22
     compatible:
     - 2.0.18
     - 2.0.20
     - 2.0.21
-    recommended: 2.0.21
+    - 2.0.22
+    recommended: 2.0.22
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
@@ -445,7 +566,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.2.5
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.ide.vscode@1.2.5
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.ide.vscode@1.2.5
   assetPath: Packages/com.unity.ide.vscode
   name: com.unity.ide.vscode
   displayName: Visual Studio Code Editor
@@ -513,7 +634,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.3.0
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.postprocessing@3.3.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.postprocessing@3.3.0
   assetPath: Packages/com.unity.postprocessing
   name: com.unity.postprocessing
   displayName: Post Processing
@@ -610,7 +731,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 14.0.8
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.render-pipelines.universal@14.0.8
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.render-pipelines.universal@14.0.8
   assetPath: Packages/com.unity.render-pipelines.universal
   name: com.unity.render-pipelines.universal
   displayName: Universal RP
@@ -748,7 +869,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 5.0.3
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.terrain-tools@5.0.3
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.terrain-tools@5.0.3
   assetPath: Packages/com.unity.terrain-tools
   name: com.unity.terrain-tools
   displayName: Terrain Tools
@@ -844,7 +965,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.1.33
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.test-framework@1.1.33
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.test-framework@1.1.33
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -971,7 +1092,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.6
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.textmeshpro@3.0.6
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.textmeshpro@3.0.6
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -1152,7 +1273,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.7.4
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.timeline@1.7.4
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.timeline@1.7.4
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -1245,22 +1366,26 @@ m_ResolvedPackages:
     - 1.7.3
     - 1.7.4
     - 1.7.5
+    - 1.7.6
     - 1.8.0
     - 1.8.1
     - 1.8.2
     - 1.8.3
     - 1.8.4
     - 1.8.5
+    - 1.8.6
     compatible:
     - 1.7.4
     - 1.7.5
+    - 1.7.6
     - 1.8.0
     - 1.8.1
     - 1.8.2
     - 1.8.3
     - 1.8.4
     - 1.8.5
-    recommended: 1.7.5
+    - 1.8.6
+    recommended: 1.7.6
     deprecated: []
   dependencies:
   - name: com.unity.modules.director
@@ -1317,7 +1442,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.4
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.toolchain.win-x86_64-linux-x86_64@2.0.4
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.toolchain.win-x86_64-linux-x86_64@2.0.4
   assetPath: Packages/com.unity.toolchain.win-x86_64-linux-x86_64
   name: com.unity.toolchain.win-x86_64-linux-x86_64
   displayName: Toolchain Win Linux x64
@@ -1410,7 +1535,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.ugui@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.ugui@1.0.0
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -1481,7 +1606,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.3.2
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.xr.interaction.toolkit@2.3.2
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.xr.interaction.toolkit@2.3.2
   assetPath: Packages/com.unity.xr.interaction.toolkit
   name: com.unity.xr.interaction.toolkit
   displayName: XR Interaction Toolkit
@@ -1537,6 +1662,7 @@ m_ResolvedPackages:
     - 2.4.3
     - 2.5.0
     - 2.5.1
+    - 2.5.2
     compatible:
     - 2.3.2
     - 2.4.0-pre.1
@@ -1546,6 +1672,7 @@ m_ResolvedPackages:
     - 2.4.3
     - 2.5.0
     - 2.5.1
+    - 2.5.2
     recommended: 2.3.2
     deprecated: []
   dependencies:
@@ -1630,7 +1757,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 4.0.0
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.xr.oculus@4.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.xr.oculus@4.0.0
   assetPath: Packages/com.unity.xr.oculus
   name: com.unity.xr.oculus
   displayName: Oculus XR Plugin
@@ -1720,9 +1847,11 @@ m_ResolvedPackages:
     - 3.3.0
     - 4.0.0
     - 4.1.1
+    - 4.2.0-exp-env-depth.1
     compatible:
     - 4.0.0
     - 4.1.1
+    - 4.2.0-exp-env-depth.1
     recommended: 4.0.0
     deprecated: []
   dependencies:
@@ -1782,7 +1911,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.7.0
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.xr.openxr@1.7.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.xr.openxr@1.7.0
   assetPath: Packages/com.unity.xr.openxr
   name: com.unity.xr.openxr
   displayName: OpenXR Plugin
@@ -1823,11 +1952,13 @@ m_ResolvedPackages:
     - 1.8.0
     - 1.8.1
     - 1.8.2
+    - 1.9.1
     compatible:
     - 1.7.0
     - 1.8.0
     - 1.8.1
     - 1.8.2
+    - 1.9.1
     recommended: 1.7.0
     deprecated: []
   dependencies:
@@ -1891,12 +2022,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.valvesoftware.unity.openvr@file:D:\Unity\ISPU_VR2\Assets\SteamVR\OpenVRUnityXRPackage\Editor\com.valvesoftware.unity.openvr-1.1.4.tgz
+- packageId: com.valvesoftware.unity.openvr@file:C:\Users\trenager\Documents\GitHub\ISPU_VR2\Assets\SteamVR\OpenVRUnityXRPackage\Editor\com.valvesoftware.unity.openvr-1.1.4.tgz
   testable: 0
   isDirectDependency: 1
   version: 1.1.4
   source: 6
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.valvesoftware.unity.openvr@3ee6c452bc34
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.valvesoftware.unity.openvr@3ee6c452bc34
   assetPath: Packages/com.valvesoftware.unity.openvr
   name: com.valvesoftware.unity.openvr
   displayName: OpenVR XR Plugin
@@ -1986,7 +2117,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.ai@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.ai@1.0.0
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -2041,7 +2172,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.androidjni@1.0.0
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -2095,7 +2226,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.animation@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.animation@1.0.0
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -2150,7 +2281,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -2205,7 +2336,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.audio@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.audio@1.0.0
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -2260,7 +2391,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.cloth@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.cloth@1.0.0
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -2319,7 +2450,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.director@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.director@1.0.0
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -2382,7 +2513,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -2438,7 +2569,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.imgui@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.imgui@1.0.0
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -2493,7 +2624,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -2548,7 +2679,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -2603,7 +2734,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.physics@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.physics@1.0.0
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -2658,7 +2789,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.physics2d@1.0.0
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -2713,7 +2844,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.screencapture@1.0.0
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -2772,7 +2903,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.terrain@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.terrain@1.0.0
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -2827,7 +2958,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -2890,7 +3021,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.tilemap@1.0.0
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -2948,7 +3079,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.ui@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.ui@1.0.0
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -3003,7 +3134,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.uielements@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.uielements@1.0.0
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -3070,7 +3201,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.umbra@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.umbra@1.0.0
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -3125,7 +3256,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -3188,7 +3319,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -3243,7 +3374,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -3306,7 +3437,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -3369,7 +3500,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -3432,7 +3563,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -3511,7 +3642,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.vehicles@1.0.0
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -3570,7 +3701,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.video@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.video@1.0.0
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -3637,7 +3768,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.vr@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.vr@1.0.0
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -3706,7 +3837,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.wind@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.wind@1.0.0
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -3761,7 +3892,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.xr@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.xr@1.0.0
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -3828,7 +3959,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.modules.subsystems@1.0.0
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -3887,7 +4018,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 4.3.3
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.xr.management@4.3.3
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.xr.management@4.3.3
   assetPath: Packages/com.unity.xr.management
   name: com.unity.xr.management
   displayName: XR Plugin Management
@@ -4022,7 +4153,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.1.10
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.10
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.10
   assetPath: Packages/com.unity.xr.legacyinputhelpers
   name: com.unity.xr.legacyinputhelpers
   displayName: XR Legacy Input Helpers
@@ -4124,7 +4255,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.6.1
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.inputsystem@1.6.1
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.inputsystem@1.6.1
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -4241,7 +4372,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.2.6
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.mathematics@1.2.6
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.mathematics@1.2.6
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics
@@ -4315,7 +4446,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.2.1
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.xr.core-utils@2.2.1
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.xr.core-utils@2.2.1
   assetPath: Packages/com.unity.xr.core-utils
   name: com.unity.xr.core-utils
   displayName: XR Core Utilities
@@ -4416,7 +4547,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.5
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.sysroot@2.0.5
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.sysroot@2.0.5
   assetPath: Packages/com.unity.sysroot
   name: com.unity.sysroot
   displayName: Sysroot Base
@@ -4495,7 +4626,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.4
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.sysroot.linux-x86_64@2.0.4
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.sysroot.linux-x86_64@2.0.4
   assetPath: Packages/com.unity.sysroot.linux-x86_64
   name: com.unity.sysroot.linux-x86_64
   displayName: Sysroot Linux x64
@@ -4575,7 +4706,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.6
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.ext.nunit@1.0.6
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.ext.nunit@1.0.6
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -4646,7 +4777,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.8.4
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.burst@1.8.4
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.burst@1.8.4
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -4785,11 +4916,13 @@ m_ResolvedPackages:
     - 1.8.4
     - 1.8.7
     - 1.8.8
+    - 1.8.9
     compatible:
     - 1.8.4
     - 1.8.7
     - 1.8.8
-    recommended: 1.8.8
+    - 1.8.9
+    recommended: 1.8.9
     deprecated: []
   dependencies:
   - name: com.unity.mathematics
@@ -4829,7 +4962,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 14.0.8
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.render-pipelines.core@14.0.8
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.render-pipelines.core@14.0.8
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
   displayName: Core RP Library
@@ -5007,7 +5140,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 14.0.8
   source: 2
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.shadergraph@14.0.8
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.shadergraph@14.0.8
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -5177,12 +5310,72 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+- packageId: com.autodesk.fbx@4.2.1
+  testable: 0
+  isDirectDependency: 0
+  version: 4.2.1
+  source: 1
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.autodesk.fbx@4.2.1
+  assetPath: Packages/com.autodesk.fbx
+  name: com.autodesk.fbx
+  displayName: Autodesk FBX SDK for Unity
+  author:
+    name: Unity
+    email: 
+    url: 
+  category: 
+  type: 
+  description: "This package provides Unity C# bindings to the Autodesk\xAE FBX\xAE
+    SDK."
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 4.2.1
+    compatible:
+    - 4.2.1
+    recommended: 4.2.1
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - fbx
+  - animation
+  - modeling
+  - maya
+  - max
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: https://docs.unity3d.com/Packages/com.autodesk.fbx@4.2/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.autodesk.fbx.git
+    revision: 0d5f364e4c87bd0b741293e1abd178b456e7338c
+    path: 
+  unityLifecycle:
+    version: 4.2.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.searcher@4.9.2
   testable: 0
   isDirectDependency: 0
   version: 4.9.2
   source: 1
-  resolvedPath: D:\Unity\ISPU_VR2\Library\PackageCache\com.unity.searcher@4.9.2
+  resolvedPath: C:\Users\trenager\Documents\GitHub\ISPU_VR2\Library\PackageCache\com.unity.searcher@4.9.2
   assetPath: Packages/com.unity.searcher
   name: com.unity.searcher
   displayName: Searcher
