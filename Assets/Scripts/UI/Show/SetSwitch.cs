@@ -16,7 +16,7 @@ public class SetSwitch : MonoBehaviour
 
     }
 
-    void OnMouseDown()
+    public void OnMouseDown()
     {
         if (Main.Instance != null)
         {
