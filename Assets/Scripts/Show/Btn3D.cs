@@ -54,8 +54,9 @@ public class Btn3D: MonoBehaviour
         if (highlight != null) highlight.ToggleHighlight(true);
     }
 
-    void OnMouseDown()
+    public void Click()
     {
+        if (highlight != null) highlight.ToggleHighlight(true);
         btnON = !btnON;
         if (Callback != null) Callback(btnON);
 

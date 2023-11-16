@@ -52,6 +52,7 @@ public class TCPSocket : MonoBehaviour
 	
 	private void ConnectToTcpServer()
 	{
+		int i = 0;
 		try
 		{
 			socketConnection = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);

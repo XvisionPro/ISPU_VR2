@@ -3538,6 +3538,10 @@ PrefabInstance:
       propertyPath: m_Positions.Array.data[19].z
       value: 108.961334
       objectReference: {fileID: 0}
+    - target: {fileID: 8060449698290778862, guid: c4cbae1cc53d8a047b77fffe607c8828, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8141091920729962034, guid: c4cbae1cc53d8a047b77fffe607c8828, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -3822,12 +3826,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5471026703963866756, guid: c4cbae1cc53d8a047b77fffe607c8828, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 1325806954894654153, guid: c4cbae1cc53d8a047b77fffe607c8828, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1923405218}
-    - targetCorrespondingSourceObject: {fileID: 1325806954894654153, guid: c4cbae1cc53d8a047b77fffe607c8828, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1923405217}
     - targetCorrespondingSourceObject: {fileID: 3365672690300091122, guid: c4cbae1cc53d8a047b77fffe607c8828, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -3879,7 +3877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3697617843079484519, guid: f6e4cbe46d256bf43a538cbba01a1dc2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4113079807218693820, guid: f6e4cbe46d256bf43a538cbba01a1dc2, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -10115,101 +10113,17 @@ Transform:
   m_Father: {fileID: 2119343406}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 2.405, y: -2.77, z: 0}
---- !u!1 &1923405214 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1325806954894654153, guid: c4cbae1cc53d8a047b77fffe607c8828, type: 3}
-  m_PrefabInstance: {fileID: 396426064}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1923405215 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5636243475660571624, guid: c4cbae1cc53d8a047b77fffe607c8828, type: 3}
   m_PrefabInstance: {fileID: 396426064}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923405214}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 085c5da82492ccc458f0d46c86a66b6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1923405217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923405214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53cd2ef2dd3d5d64e96af4420220d1d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onHandClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1923405215}
-        m_TargetAssemblyTypeName: SetSwitch, Assembly-CSharp
-        m_MethodName: OnMouseDown
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1923405218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923405214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activateActionSetOnAttach:
-    actionSetPath: 
-  hideHandOnAttach: 1
-  hideSkeletonOnAttach: 0
-  hideControllerOnAttach: 0
-  handAnimationOnPickup: 0
-  setRangeOfMotionOnPickup: -1
-  useHandObjectAttachmentPoint: 1
-  attachEaseIn: 0
-  snapAttachEaseInCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  snapAttachEaseInTime: 0.15
-  snapAttachEaseInCompleted: 0
-  skeletonPoser: {fileID: 0}
-  handFollowTransform: 1
-  highlightOnHover: 1
-  hideHighlight: []
-  hoverPriority: 0
 --- !u!1 &2048063849
 GameObject:
   m_ObjectHideFlags: 0
