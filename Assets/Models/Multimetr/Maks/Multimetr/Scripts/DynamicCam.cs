@@ -34,10 +34,6 @@ public class DynamicCam : MonoBehaviour
             // вращаем камеру вокруг осей X и Y
             transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
         }
-
-        float horizontalwalk = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
-        float vertical = Input.GetAxis("Vertical") * Time.deltaTime * speed;
-        transform.Translate(horizontalwalk, 0, vertical);
     }
 }
 
