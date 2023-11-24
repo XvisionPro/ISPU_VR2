@@ -82,9 +82,7 @@ public class MainScript_1 : MonoBehaviour
         }
         if (button1.work1 == true && button2.work2 == false && (blackProbe.ConnectToLeftClemmaRozetki || blackProbe.ConnectToRightClemmaRozetki) && (redProbe.ConnectToRightClemmaRozetki || redProbe.ConnectToLeftClemmaRozetki) && (rotate.counter == 22 || rotate.counter == 21) && (wireBlack.ConnectToCOM && wireRed.ConnectTo10A))
         {
-            Vector3 EffectPos= new Vector3(-12.44f, 3.27f, 6.28f);
-            Quaternion quaternion = Quaternion.Euler(0, 0, 0);
-            Instantiate(EffectPrefab, EffectPos,quaternion);
+            tm.text = "ERROR";
         }
     }
     private void AC_DC()

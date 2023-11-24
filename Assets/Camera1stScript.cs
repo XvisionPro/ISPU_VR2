@@ -6,6 +6,8 @@ public class Camera1stScript : MonoBehaviour
 {
     private bool working=true;
     [SerializeField]
+    private Transform thing;
+    [SerializeField]
     private Transform player;
     [SerializeField]
     private GameObject PlayerCamera;
@@ -32,7 +34,7 @@ public class Camera1stScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) <= attackDistance)
+        if (Vector3.Distance(this.transform.position, player.transform.position) <= attackDistance)
         {
             if (Input.GetKeyDown(KeyCode.E) && working)
             {

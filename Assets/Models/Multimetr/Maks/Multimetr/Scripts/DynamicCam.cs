@@ -9,10 +9,12 @@ public class DynamicCam : MonoBehaviour
 
     public float horizontalSpeed = 2.0f; // чувствительность мыши по горизонтали
     public float verticalSpeed = 2.0f; // чувствительность мыши по вертикали
-    public float minYAngle = -90.0f; // минимальный угол по оси Y
-    public float maxYAngle = 90.0f; // максимальный угол по оси Y
+    public float minYAngleY = -90.0f; // минимальный угол по оси Y
+    public float maxYAngleY = 90.0f; // максимальный угол по оси Y
     private float rotationX = -180.0f; // угол поворота по оси X
-    private float rotationY = 0.0f; // угол поворота по оси Y
+    private float rotationY = -82.59f; // угол поворота по оси Y
+    public float minYAngleX = -90.0f; // минимальный угол по оси Y
+    public float maxYAngleX = 90.0f;
 
     void Start()
     {
@@ -29,7 +31,8 @@ public class DynamicCam : MonoBehaviour
             rotationY += Input.GetAxis("Mouse Y") * verticalSpeed;
 
             // ограничиваем угол поворота по оси Y между минимальным и максимальным значениями
-            rotationY = Mathf.Clamp(rotationY, minYAngle, maxYAngle);
+            rotationY = Mathf.Clamp(rotationY, minYAngleY, maxYAngleY);
+            rotationX = Mathf.Clamp(rotationX, minYAngleX, maxYAngleX);
 
             // вращаем камеру вокруг осей X и Y
             transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
