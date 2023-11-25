@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Camera1stScript : MonoBehaviour
 {
     private bool working=true;
+    [SerializeField]
+    private GameObject TextE;
+    [SerializeField]
+    private TextMeshProUGUI TextCanvas;
     [SerializeField]
     private Transform thing;
     [SerializeField]
@@ -28,7 +33,7 @@ public class Camera1stScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        TextCanvas = (TextMeshProUGUI)GameObject.Find("TextMult").GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -36,11 +41,13 @@ public class Camera1stScript : MonoBehaviour
     {
         if (Vector3.Distance(this.transform.position, player.transform.position) <= attackDistance)
         {
+            TextE.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E) && working)
             {
                 Debug.Log("Я подошёл");
                 PlayerCamera.SetActive(false);
                 CameraMultimetr.SetActive(true);
+                TextCanvas.text = "ЛКМ - взаимодействие\nодинарным нажатием\nПКМ - вращение камеры";
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
                 working = false;
@@ -50,10 +57,15 @@ public class Camera1stScript : MonoBehaviour
                 Debug.Log("Я подошёл");
                 PlayerCamera.SetActive(true);
                 CameraMultimetr.SetActive(false);
+                TextCanvas.text = "";
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
                 working = true;
             }
+        }
+        else
+        {
+            TextE.SetActive(false);
         }
     }
 }
