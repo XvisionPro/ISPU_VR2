@@ -6,6 +6,8 @@ public class Camera1stScript2 : MonoBehaviour
 {
     private bool working = true;
     [SerializeField]
+    private GameObject TextE;
+    [SerializeField]
     private Transform thing;
     [SerializeField]
     private Transform player;
@@ -36,6 +38,7 @@ public class Camera1stScript2 : MonoBehaviour
     {
         if (Vector3.Distance(thing.transform.position, player.transform.position) <= attackDistance)
         {
+            TextE.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E) && working)
             {
                 Debug.Log("Я подошёл");
@@ -54,6 +57,10 @@ public class Camera1stScript2 : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 working = true;
             }
+        }
+        else
+        {
+            TextE?.SetActive(false);
         }
     }
 }
