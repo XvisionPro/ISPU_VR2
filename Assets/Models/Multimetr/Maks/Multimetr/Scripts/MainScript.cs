@@ -61,7 +61,10 @@ public class MainScript : MonoBehaviour
     private void OnOff()
     {
         if (button1.work1 == true)
+        {
             tm.text = "000.00";
+            Debug.Log("Я включился");
+        }
         else
             tm.text = " ";
         //Debug.Log("Включение =" + button1.work1);

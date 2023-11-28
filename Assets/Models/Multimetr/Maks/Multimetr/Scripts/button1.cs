@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.Extras;
 
 public class button1 : MonoBehaviour
 {
@@ -10,46 +11,67 @@ public class button1 : MonoBehaviour
     private Vector3 needpos;
     public float distance = -0.3f;
     public bool work1 = false;
-    public GameObject Self;
-    public bool flag=true;
+
+    public SteamVR_LaserPointer laserPointer;
+    public bool selected;
+
+    public void PointerInside(object sender, PointerEventArgs e)
+    {
+
+        if (e.target.name == this.gameObject.name && selected == false)
+        {
+            gameObject.GetComponent<Outline>().enabled = true;
+            selected = true;
+        }
+    }
+    public void PointerOutside(object sender, PointerEventArgs e)
+    {
+        if (e.target.name == this.gameObject.name && selected == true)
+        {
+            gameObject.GetComponent<Outline>().enabled = false;
+            selected = false;
+        }
+    }
+    public void PointerClick(object sender, PointerEventArgs e)
+    {
+        if (e.target.name == this.gameObject.name)
+        {
+            OnMouseDown();
+        }
+    }
+    public bool get_selected_value()
+    {
+        return selected;
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
-        basepos = Self.transform.localPosition;
-
+        basepos = gameObject.transform.localPosition;
+        laserPointer.PointerIn += PointerInside;
+        laserPointer.PointerOut += PointerOutside;
+        laserPointer.PointerClick += PointerClick;
+        selected = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnMouseDown()
     {
-
-    }
-
-    public void Trunik2()
-    {
-        if (work1 == false && flag==true)
+        if (work1 == false)
         {
             needpos = new Vector3(gameObject.transform.localPosition.x + distance, gameObject.transform.localPosition.y, gameObject.transform.localPosition.z);
-            Debug.Log(Self.transform.localPosition);
-            Self.transform.localPosition = new Vector3(needpos.x, needpos.y, needpos.z);
-            StartCoroutine(time(0.1f));
-            Debug.Log(needpos);
-            return;
+            gameObject.transform.localPosition = needpos;
+            work1 = true;
         }
-        else if (work1 == true && flag == true)
+        else if (work1 == true)
         {
             gameObject.transform.localPosition = basepos;
-            StartCoroutine(time(0.1f));
-
+            work1 = false;
         }
-    }
-    IEnumerator time(float time)
-    {
-        flag = false;
-        yield return new WaitForSeconds(time);
-        work1 = !work1;
-        flag = true;
-
+        if (onChange != null)
+        {
+            onChange();
+        }
     }
     public void Button1Click(Action on_change)
     {
