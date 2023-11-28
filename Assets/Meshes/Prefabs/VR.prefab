@@ -11100,7 +11100,7 @@ Transform:
   - {fileID: 1706584900576712038}
   - {fileID: 2316453165331158040}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3747394599469316799
 GameObject:
@@ -12220,7 +12220,6 @@ GameObject:
   - component: {fileID: 2201671012726808677}
   - component: {fileID: 6894563963873647212}
   - component: {fileID: 2219655559148997303}
-  - component: {fileID: 2230607294658736731}
   m_Layer: 0
   m_Name: g_MultiMeter_LP_pCube6_MultiMeter_LP_pCube6
   m_TagString: Untagged
@@ -12328,8 +12327,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: -0.3
   work1: 0
-  laserPointer: {fileID: 0}
-  selected: 0
 --- !u!114 &2201671012726808677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12453,24 +12450,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2230607294658736731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4328902580290313376}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 0.9072538, b: 0, a: 1}
-  outlineWidth: 3.59
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &4353099110348234946
 GameObject:
   m_ObjectHideFlags: 0
@@ -18018,7 +17997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0df6fa4a13050084aa004291233feb15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pose: {fileID: 0}
+  pose: {fileID: 1577924417063233584}
   interactWithUI:
     actionPath: /actions/default/in/InteractUI
     needsReinit: 0
@@ -19572,14 +19551,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activateActionSetOnAttach:
-    actionSetPath: 
+    actionSetPath: /actions/mixedreality
   hideHandOnAttach: 1
   hideSkeletonOnAttach: 0
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
   useHandObjectAttachmentPoint: 1
-  attachEaseIn: 0
+  attachEaseIn: 1
   snapAttachEaseInCurve:
     serializedVersion: 2
     m_Curve:

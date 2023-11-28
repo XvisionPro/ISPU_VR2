@@ -31,7 +31,7 @@ public class ButtonScript : MonoBehaviour
 
         if (e.target.name == this.gameObject.name && selected == false)
         {
-            gameObject.GetComponent<Outline>().enabled = false;
+            gameObject.GetComponent<Outline>().enabled = true;
             selected = true;
             Debug.Log("pointer is inside this object" + e.target.name);
         }
@@ -42,7 +42,7 @@ public class ButtonScript : MonoBehaviour
 
         if (e.target.name == this.gameObject.name && selected == true)
         {
-            gameObject.GetComponent<Outline>().enabled = true;
+            gameObject.GetComponent<Outline>().enabled = false;
             selected = false;
             Debug.Log("pointer is outside this object" + e.target.name);
         }
