@@ -8,10 +8,10 @@ using Valve.VR.InteractionSystem;
 
 public class ButtonScript : MonoBehaviour
 {
-    public SteamVR_LaserPointer laserPointer;
+    public static SteamVR_LaserPointer laserPointer;
 
     public bool selected;
-    private Hand hand;
+    public static Hand hand;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +20,8 @@ public class ButtonScript : MonoBehaviour
 
     public void Activete()
     {
-        laserPointer = (Laser)GameObject.Find("RightHand").GetComponent<Laser>();
-        hand = (Hand)GameObject.Find("RightHand").GetComponent<Hand>();
+        //laserPointer = (Laser)GameObject.Find("RightHand").GetComponent<Laser>();
+        //hand = (Hand)GameObject.Find("RightHand").GetComponent<Hand>();
         laserPointer.PointerIn += PointerInside;
         laserPointer.PointerOut += PointerOutside;
         laserPointer.PointerClick += PointerClick;
@@ -54,12 +54,13 @@ public class ButtonScript : MonoBehaviour
         }
     }
 
-    public void PointerClick(object sender, PointerEventArgs e)
+    public void PointerClick<T>(object sender, PointerEventArgs e) where T : EventTrigger
     {
         if (e.target.name == this.gameObject.name)
         {
-            gameObject.SetActive(false);
-            Debug.Log("ClickClickClickClickClickClickClickClickClickClick");
+            //gameObject.SetActive(false);
+            //Debug.Log("ClickClickClickClickClickClickClickClickClickClick");
+            var obj =(GameObject)gameObject.GetComponent<T>().OnMouseDown();
         }
     }
 
