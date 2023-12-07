@@ -1,27 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.Video;
+using UnityEngine.UI;
 using Valve.VR.Extras;
 using Valve.VR.InteractionSystem;
 
-public class ButtonScript : MonoBehaviour
+public class myButtonScript : Button
 {
     public static SteamVR_LaserPointer laserPointer;
 
-    public bool selected;
-    public static Hand hand;
+    [SerializeField]
+    public CustomEvents.UnityEventHand curClick;
+    [SerializeField]
+    public Outline outline;
+
     // Start is called before the first frame update
     void Start()
     {
-        selected = false;
+        //if (outline == null) outline = gameObject.GetComponent<Outline>();
+        onClick.RemoveAllListeners();
+        onClick.AddListener(Click);
     }
 
     public void Activete()
     {
-        //laserPointer = (Laser)GameObject.Find("RightHand").GetComponent<Laser>();
-        //hand = (Hand)GameObject.Find("RightHand").GetComponent<Hand>();
         laserPointer.PointerIn += PointerInside;
         laserPointer.PointerOut += PointerOutside;
         laserPointer.PointerClick += PointerClick;
@@ -31,41 +31,41 @@ public class ButtonScript : MonoBehaviour
     {
         if (e.target.CompareTag("Interact"))
         {
-            gameObject.GetComponent<Outline>().enabled = true;
-            selected = true;
-            Debug.Log("pointer is inside this object" + e.target.name);
+            if (outline != null) outline.enabled = true;
         }
-/*        if (e.target.name == this.gameObject.name && selected == false)
-        
-            gameObject.GetComponent<Outline>().enabled = true;*/
-        //    selected = true;
-        //    Debug.Log("pointer is inside this object" + e.target.name);
-        //}
     }
 
     public void PointerOutside(object sender, PointerEventArgs e)
     {
 
-        if (e.target.name == this.gameObject.name && selected == true)
+        if (e.target.name == this.gameObject.name)
         {
-            gameObject.GetComponent<Outline>().enabled = false;
-            selected = false;
-            Debug.Log("pointer is outside this object" + e.target.name);
+            if (outline != null) outline.enabled = false;
         }
     }
 
-    public void PointerClick<T>(object sender, PointerEventArgs e) where T : EventTrigger
+    public void PointerClick(object sender, PointerEventArgs e)
     {
         if (e.target.name == this.gameObject.name)
         {
-            //gameObject.SetActive(false);
-            //Debug.Log("ClickClickClickClickClickClickClickClickClickClick");
-            var obj =(GameObject)gameObject.GetComponent<T>().OnMouseDown();
+            Click();
         }
     }
 
-    public bool get_selected_value()
+    private void OnMouseOver()
     {
-        return selected;
+        if (outline != null) outline.enabled = false;
+    }
+
+    private void OnMouseEnter()
+    {
+        if (outline != null) outline.enabled = true;
+    }
+
+    public void Click()
+    {
+        if (outline != null) outline.enabled = true;
+
+        if (onClick != null) curClick.Invoke(null);
     }
 }
