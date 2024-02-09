@@ -3,19 +3,19 @@ using UnityEngine.UI;
 using Valve.VR.Extras;
 using Valve.VR.InteractionSystem;
 
-public class myButtonScript : Button
+public class ButtonScript : Button
 {
     public static SteamVR_LaserPointer laserPointer;
 
     [SerializeField]
-    public CustomEvents.UnityEventHand curClick;
+    public CustomEvents.UnityEventHand curClick; 
     [SerializeField]
     public Outline outline;
 
     // Start is called before the first frame update
     void Start()
     {
-        //if (outline == null) outline = gameObject.GetComponent<Outline>();
+        if (outline == null) outline = gameObject.GetComponent<Outline>();
         onClick.RemoveAllListeners();
         onClick.AddListener(Click);
     }
@@ -55,11 +55,13 @@ public class myButtonScript : Button
     private void OnMouseOver()
     {
         if (outline != null) outline.enabled = false;
+        Debug.Log("Over");
     }
 
     private void OnMouseEnter()
     {
         if (outline != null) outline.enabled = true;
+        Debug.Log("Enter");
     }
 
     public void Click()

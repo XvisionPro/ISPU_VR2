@@ -10,11 +10,11 @@ public class initialize : MonoBehaviour
 
     private void Start()
     {
-        myButtonScript.laserPointer = (Laser)GameObject.Find("RightHand").GetComponent<Laser>();
+        ButtonScript.laserPointer = (Laser)GameObject.Find("RightHand").GetComponent<Laser>();
         items = GameObject.FindGameObjectsWithTag("Interact");
-        foreach (var item in items)
+/*        foreach (var item in items)
         {
             item.GetComponent<myButtonScript>().Activete();
-        }
+        }*/
     }
 }
