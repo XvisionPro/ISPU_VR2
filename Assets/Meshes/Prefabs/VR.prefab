@@ -11115,7 +11115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e621285e55a8ce499b4d102f69fe321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
 --- !u!1 &3747394599469316799
 GameObject:
   m_ObjectHideFlags: 0
@@ -12341,8 +12340,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: -0.3
   work1: 0
-  laserPointer: {fileID: 0}
-  selected: 0
 --- !u!114 &2201671012726808677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12600,7 +12597,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4363702521658789621}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 12.885905, y: -0.08988998, z: -7.625771}
+  m_LocalPosition: {x: 2.66, y: -0.08988998, z: -6.18}
   m_LocalScale: {x: 0.89015377, y: 0.89015377, z: 0.8901542}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -21865,7 +21862,6 @@ Transform:
   - {fileID: 6670256359119623643}
   - {fileID: 3596810280142151117}
   - {fileID: 4670412772618714980}
-  - {fileID: 3986477985462261232}
   - {fileID: 4247555753869571232}
   - {fileID: 4586701965940612873}
   - {fileID: 4442112618679624856}
@@ -22753,116 +22749,6 @@ MonoBehaviour:
     needsReinit: 0
   autoSetWithControllerRangeOfMotion: 1
   debugHints: 0
---- !u!1 &8472779528017946128
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3986477985462261232}
-  - component: {fileID: 6085497244240273499}
-  - component: {fileID: 4977784030054003814}
-  - component: {fileID: 2769895837789394737}
-  m_Layer: 0
-  m_Name: TextMultimetr
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3986477985462261232
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8472779528017946128}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 2.83, y: 0.27742004, z: -5.7799997}
-  m_LocalScale: {x: 0.8900001, y: 0.89, z: 0.89}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2316453165331158040}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
---- !u!23 &6085497244240273499
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8472779528017946128}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 4ef830dc83a0c034686cd36139997d92, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!102 &4977784030054003814
-TextMesh:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8472779528017946128}
-  m_Text: 
-  m_OffsetZ: 0
-  m_CharacterSize: 1
-  m_LineSpacing: 1
-  m_Anchor: 0
-  m_Alignment: 0
-  m_TabSize: 4
-  m_FontSize: 0
-  m_FontStyle: 0
-  m_RichText: 1
-  m_Font: {fileID: 12800000, guid: 4ef830dc83a0c034686cd36139997d92, type: 3}
-  m_Color:
-    serializedVersion: 2
-    rgba: 4294967295
---- !u!114 &2769895837789394737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8472779528017946128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a7ce8021a6f8045ae1a9d5add1bcf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8483091202659603109
 GameObject:
   m_ObjectHideFlags: 0
