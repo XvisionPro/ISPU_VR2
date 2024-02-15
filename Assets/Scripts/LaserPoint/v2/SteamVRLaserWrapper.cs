@@ -2,16 +2,16 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using Valve.VR.Extras;
 
-public class SteamVRLaserWrapper1 : MonoBehaviour
+public class SteamVRLaserWrapper : MonoBehaviour
 {
-    private SteamVR_LaserPointer steamVrLaserPointer;
+    private SteamVR_LaserPointer _steamVrLaserPointer;
 
     private void Awake()
     {
-        steamVrLaserPointer = gameObject.GetComponent<SteamVR_LaserPointer>();
-        steamVrLaserPointer.PointerIn += OnPointerIn;
-        steamVrLaserPointer.PointerOut += OnPointerOut;
-        steamVrLaserPointer.PointerClick += OnPointerClick;
+        _steamVrLaserPointer = gameObject.GetComponent<SteamVR_LaserPointer>();
+        _steamVrLaserPointer.PointerIn += OnPointerIn;
+        _steamVrLaserPointer.PointerOut += OnPointerOut;
+        _steamVrLaserPointer.PointerClick += OnPointerClick;
     }
 
     private void OnPointerClick(object sender, PointerEventArgs e)
@@ -22,7 +22,7 @@ public class SteamVRLaserWrapper1 : MonoBehaviour
             return;
         }
 
-
+        Debug.Log(sender);
         clickHandler.OnPointerClick(new PointerEventData(EventSystem.current));
     }
 

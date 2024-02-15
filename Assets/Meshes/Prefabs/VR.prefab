@@ -17869,7 +17869,8 @@ GameObject:
   - component: {fileID: 1577924417063233584}
   - component: {fileID: 8776716341241306125}
   - component: {fileID: 8596242091680956704}
-  - component: {fileID: 5326737487747466336}
+  - component: {fileID: 5572000487097598067}
+  - component: {fileID: 5785312855557745250}
   m_Layer: 26
   m_Name: RightHand
   m_TagString: Untagged
@@ -18005,7 +18006,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6744288558632012471}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0df6fa4a13050084aa004291233feb15, type: 3}
   m_Name: 
@@ -18022,7 +18023,7 @@ MonoBehaviour:
   pointer: {fileID: 0}
   addRigidBody: 0
   reference: {fileID: 0}
---- !u!114 &5326737487747466336
+--- !u!114 &5572000487097598067
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18031,7 +18032,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 6744288558632012471}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 668413c086ce90f42adf11962c744ede, type: 3}
+  m_Script: {fileID: 11500000, guid: b2f511c1adaa1e94ebe7ca97bbcabd17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pose: {fileID: 0}
+  interactWithUI:
+    actionPath: /actions/default/in/InteractUI
+    needsReinit: 0
+  active: 1
+  color: {r: 0, g: 0, b: 0, a: 0}
+  thickness: 0.002
+  clickColor: {r: 0, g: 0.6927556, b: 0.9056604, a: 1}
+  holder: {fileID: 0}
+  pointer: {fileID: 0}
+  addRigidBody: 0
+  reference: {fileID: 0}
+--- !u!114 &5785312855557745250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6744288558632012471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 194105420777e3948ba489e5a93c5dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6798047516720981920
