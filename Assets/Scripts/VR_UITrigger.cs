@@ -7,10 +7,15 @@ public class VR_UITrigger : MonoBehaviour
     public static GameObject instance;
     private Canvas[] canvases;
 
-
     void Awake()
     {
-        canvases = GetComponentsInChildren<Canvas>();
+        canvases = this.GetComponentsInChildren<Canvas>();
+
+        // Initialization
+        foreach (var item in canvases)
+        {
+            item.enabled = false;
+        }
     }
 
 
@@ -20,6 +25,7 @@ public class VR_UITrigger : MonoBehaviour
         {
             foreach (var item in canvases)
             {
+                //item.GetComponent<CanvasGroup>().alpha = 0;
                 item.enabled = true;
             }
         }

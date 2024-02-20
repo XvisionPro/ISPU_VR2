@@ -68,6 +68,14 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Invector.vSliderSizeControl, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 243995916, guid: a3d3e9322b030904995bcd87999ccfe6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 244011428, guid: a3d3e9322b030904995bcd87999ccfe6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 266091336, guid: a3d3e9322b030904995bcd87999ccfe6, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -83,8 +91,20 @@ PrefabInstance:
     - target: {fileID: 266291612, guid: a3d3e9322b030904995bcd87999ccfe6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026212853, guid: a3d3e9322b030904995bcd87999ccfe6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1032505615, guid: a3d3e9322b030904995bcd87999ccfe6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134095191, guid: a3d3e9322b030904995bcd87999ccfe6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134097591, guid: a3d3e9322b030904995bcd87999ccfe6, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -112,7 +132,8 @@ PrefabInstance:
     - {fileID: 11417308, guid: a3d3e9322b030904995bcd87999ccfe6, type: 3}
     - {fileID: 11473114, guid: a3d3e9322b030904995bcd87999ccfe6, type: 3}
     - {fileID: 11499550, guid: a3d3e9322b030904995bcd87999ccfe6, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1026212853, guid: a3d3e9322b030904995bcd87999ccfe6, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3d3e9322b030904995bcd87999ccfe6, type: 3}

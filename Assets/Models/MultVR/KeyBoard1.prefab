@@ -1405,7 +1405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3560283147274491874
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5101,8 +5101,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 2285588461188160658}
     m_Modifications:
     - target: {fileID: 6354596435642886583, guid: 623d6ac7973203840a58c7c092299212, type: 3}
+      propertyPath: lockCameraInput
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354596435642886583, guid: 623d6ac7973203840a58c7c092299212, type: 3}
       propertyPath: openCloseWindow
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354596435642886583, guid: 623d6ac7973203840a58c7c092299212, type: 3}
+      propertyPath: selectedToolbar
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6354596435642886583, guid: 623d6ac7973203840a58c7c092299212, type: 3}
       propertyPath: sprintInput.mobile
@@ -5344,6 +5352,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[5]
       value: 
       objectReference: {fileID: 2100000, guid: eca4cfb57c9533d42a2c67865256f104, type: 2}
+    - target: {fileID: 6459584233355619929, guid: 623d6ac7973203840a58c7c092299212, type: 3}
+      propertyPath: selectedToolbar
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6459584234075217752, guid: 623d6ac7973203840a58c7c092299212, type: 3}
       propertyPath: m_IsActive
       value: 0
