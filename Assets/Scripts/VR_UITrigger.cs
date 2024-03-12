@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class VR_UITrigger : MonoBehaviour
 {
     public static GameObject instance;
     private Canvas[] canvases;
+    public UnityEvent OnTriggerEvent;
 
     void Awake()
     {
@@ -25,8 +27,12 @@ public class VR_UITrigger : MonoBehaviour
         {
             foreach (var item in canvases)
             {
-                //item.GetComponent<CanvasGroup>().alpha = 0;
                 item.enabled = true;
+            }
+            var list = GetComponents<IEnterTrigger>();
+            foreach (var item in list)
+            {
+                item.EnterTrigger();
             }
         }
     }
@@ -39,6 +45,9 @@ public class VR_UITrigger : MonoBehaviour
             {
                 item.enabled = false;
             }
+            Debug.Log("Out");
         }
     }
+
+    
 }
