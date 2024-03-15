@@ -31,6 +31,7 @@ namespace Invector.vCharacterController
         public GenericInput strafeInput = new GenericInput("Tab", "RightStickClick", "RightStickClick");
         public GenericInput jumpInput = new GenericInput("Space", "X", "X");
         public GenericInput rollInput = new GenericInput("Q", "B", "B");
+        public GenericInput actionInput = new GenericInput("Action", "", "");
 
         [HideInInspector] public bool lockInput;
 
@@ -48,6 +49,7 @@ namespace Invector.vCharacterController
         public UnityEvent OnUnlockCamera;
         public UnityEvent onEnableAnimatorMove = new UnityEvent();
         public UnityEvent onDisableDisableAnimatorMove = new UnityEvent();
+        public UnityEvent onActionButtonDown;
 
         [HideInInspector]
         public vCamera.vThirdPersonCamera tpCamera;         // access tpCamera info
@@ -434,8 +436,17 @@ namespace Invector.vCharacterController
             StrafeInput();
             JumpInput();
             RollInput();
+            ActionInput(); //
         }
-
+        // изменено
+        public virtual void ActionInput()
+        {
+            if (actionInput.GetButtonDown())
+            {
+                onActionButtonDown.Invoke();
+            }
+        }
+        //.
         public virtual void MoveInput()
         {
             if (!lockMoveInput)

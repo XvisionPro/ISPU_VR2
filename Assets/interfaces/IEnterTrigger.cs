@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IEnterTrigger 
 {
-    void EnterTrigger();
+    void EnterTrigger(MonoBehaviour obj);
 }

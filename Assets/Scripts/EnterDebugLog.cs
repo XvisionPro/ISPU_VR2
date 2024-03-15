@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EnterDebugLog : MonoBehaviour, IEnterTrigger
 {
-    public void EnterTrigger()
+    public void EnterTrigger(MonoBehaviour obj)
     {
-        Debug.Log("Enter Trigger");
+        Debug.Log(obj.name);
     }
 
 }
