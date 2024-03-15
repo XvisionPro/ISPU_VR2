@@ -1,3 +1,4 @@
+using Invector.vCamera;
 using Invector.vCharacterController;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,8 +8,9 @@ using UnityEngine.Events;
 public class VR_UITrigger : MonoBehaviour
 {
     public static vThirdPersonInput inputInstance;
+    public static vThirdPersonCamera cameraInstance;
     private Canvas[] canvases;
-    public UnityEvent OnTriggerEvent;
+    public UnityEvent OnInteractEvent;
 
     void Awake()
     {
@@ -28,6 +30,7 @@ public class VR_UITrigger : MonoBehaviour
             if(inputInstance == null)
             {
                 inputInstance = collision.gameObject.GetComponentInParent<vThirdPersonInput>(); //Ссылка на игрового персонажа
+                cameraInstance = inputInstance.tpCamera; //Ссылка на камеру персонажа
             }
 
             foreach (var item in canvases)
@@ -36,11 +39,9 @@ public class VR_UITrigger : MonoBehaviour
             }
 
             //Подписка на событие нажатия клавишы взаимодействия
-            inputInstance.onActionButtonDown.AddListener(testTrigger);
+            inputInstance.onActionButtonDown = OnInteractEvent;
 
-            OnTriggerEvent.Invoke(); // Вызываем все функции, указанные в инспекторе.
-
-            var list = GetComponents<IEnterTrigger>();// Реализация интерфейса
+            var list = GetComponents<IEnterTrigger>();// Реализация интерфейса при заходе в триггер
             foreach (var item in list)
             {
                 item.EnterTrigger(inputInstance);
@@ -57,14 +58,16 @@ public class VR_UITrigger : MonoBehaviour
             {
                 item.enabled = false;
             }
-            inputInstance.onActionButtonDown.RemoveAllListeners();
-
+            inputInstance.onActionButtonDown = new UnityEvent();
             Debug.Log("Out");
         }
     }
 
-    public void testTrigger()
+    public void SetCameraToObject()
     {
-        Debug.Log("Отожмусь 20-ку если заработаешь!");
+        inputInstance.ChangeCameraStateWithLerp("-1.28100002, 0, 0");
+        //cameraInstance.FreezeCamera();
+        inputInstance.LockCursor(true);
+        inputInstance.ShowCursor(true);
     }
 }

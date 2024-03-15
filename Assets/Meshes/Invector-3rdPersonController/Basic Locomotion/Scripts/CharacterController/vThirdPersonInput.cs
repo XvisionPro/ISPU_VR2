@@ -158,7 +158,6 @@ namespace Invector.vCharacterController
         public virtual void FindCamera()
         {
             var tpCameras = FindObjectsOfType<vCamera.vThirdPersonCamera>();
-
             if (tpCameras.Length > 1)
             {
                 tpCamera = System.Array.Find(tpCameras, tp => !tp.isInit);

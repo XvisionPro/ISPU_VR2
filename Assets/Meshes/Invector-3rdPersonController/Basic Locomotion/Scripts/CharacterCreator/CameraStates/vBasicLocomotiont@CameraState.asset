@@ -164,8 +164,8 @@ MonoBehaviour:
     fixedAngle: {x: 0, y: 0}
     lookPoints:
     - pointName: point_01
-      positionPoint: {x: 26.55739, y: 11.5149355, z: -14.382481}
-      eulerAngle: {x: 18.395489, y: 3.0748892, z: 0.00039735215}
+      positionPoint: {x: 11.998325, y: 54.941063, z: 92.016846}
+      eulerAngle: {x: 26.746052, y: 0.9432883, z: -0.002380103}
       freeRotation: 0
     - pointName: point_02
       positionPoint: {x: 29.395, y: 0.709, z: 2.2409992}
@@ -176,3 +176,26 @@ MonoBehaviour:
       eulerAngle: {x: 2.0625482, y: 271.75256, z: -0.00016467154}
       freeRotation: 0
     cameraMode: 2
+  - Name: Object
+    forward: -0.708
+    right: 0
+    defaultDistance: 0.52
+    maxDistance: 3
+    minDistance: 0.5
+    height: 1.61
+    smooth: 10
+    smoothDamp: 0
+    xMouseSensitivity: 3
+    yMouseSensitivity: 3
+    yMinLimit: -40
+    yMaxLimit: 80
+    xMinLimit: -360
+    xMaxLimit: 360
+    rotationOffSet: {x: 0, y: 0, z: 0}
+    cullingHeight: 0.2
+    cullingMinDist: 0.1
+    fov: 59.5
+    useZoom: 0
+    fixedAngle: {x: 0, y: 0}
+    lookPoints: []
+    cameraMode: 0
