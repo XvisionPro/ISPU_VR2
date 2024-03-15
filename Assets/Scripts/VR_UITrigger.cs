@@ -65,8 +65,7 @@ public class VR_UITrigger : MonoBehaviour
 
     public void SetCameraToObject()
     {
-        inputInstance.ChangeCameraStateWithLerp("-1.28100002, 0, 0");
-        //cameraInstance.FreezeCamera();
+        cameraInstance.FreezeCamera();
         inputInstance.LockCursor(true);
         inputInstance.ShowCursor(true);
     }
