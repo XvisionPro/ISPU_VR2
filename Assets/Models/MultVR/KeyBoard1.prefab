@@ -249,7 +249,7 @@ MonoBehaviour:
   behindTargetSmoothRotation: 1
   lockCamera: 0
   offsetMouse: {x: 0, y: 0}
-  indexList: 0
+  indexList: 6
   indexLookPoint: 0
   offSetPlayerPivot: 0
   distance: 5
@@ -279,6 +279,7 @@ MonoBehaviour:
     fixedAngle: {x: 0, y: 0}
     lookPoints: []
     cameraMode: 0
+    hidePerson: 0
   CameraStateList: {fileID: 11400000, guid: dbf2c7a931be7ae4d960bc178dc4dda6, type: 2}
   lockTarget: {fileID: 0}
   movementSpeed: {x: 0, y: 0}
@@ -306,6 +307,7 @@ MonoBehaviour:
     fixedAngle: {x: 0, y: 0}
     lookPoints: []
     cameraMode: 0
+    hidePerson: 0
   isFreezed: 0
 --- !u!114 &303120927023259929
 MonoBehaviour:

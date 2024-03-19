@@ -76,6 +76,8 @@ namespace Invector.vCharacterController
         protected bool withoutMainCamera;
         internal bool lockUpdateMoveDirection;                // lock the method UpdateMoveDirection
 
+        public bool isAction { get; set; }
+
         public Camera cameraMain
         {
             get
@@ -442,7 +444,9 @@ namespace Invector.vCharacterController
         {
             if (actionInput.GetButtonDown())
             {
+                isAction = !isAction;
                 onActionButtonDown.Invoke();
+                
             }
         }
         //.

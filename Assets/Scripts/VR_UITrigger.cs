@@ -59,14 +59,24 @@ public class VR_UITrigger : MonoBehaviour
                 item.enabled = false;
             }
             inputInstance.onActionButtonDown = new UnityEvent();
-            Debug.Log("Out");
         }
     }
 
     public void SetCameraToObject()
     {
-        cameraInstance.FreezeCamera();
-        inputInstance.LockCursor(true);
-        inputInstance.ShowCursor(true);
+        if (inputInstance.isAction)
+        {
+            cameraInstance.FreezeCamera();
+            inputInstance.LockCursor(true);
+            inputInstance.ShowCursor(true);
+            inputInstance.SetLockCameraInput(true);
+        }
+        else
+        {
+            cameraInstance.UnFreezeCamera();
+            inputInstance.LockCursor(false);
+            inputInstance.ShowCursor(false);
+            inputInstance.SetLockCameraInput(false);
+        }
     }
 }
