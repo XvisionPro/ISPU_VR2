@@ -279,7 +279,6 @@ MonoBehaviour:
     fixedAngle: {x: 0, y: 0}
     lookPoints: []
     cameraMode: 0
-    hidePerson: 0
   CameraStateList: {fileID: 11400000, guid: dbf2c7a931be7ae4d960bc178dc4dda6, type: 2}
   lockTarget: {fileID: 0}
   movementSpeed: {x: 0, y: 0}
@@ -307,7 +306,6 @@ MonoBehaviour:
     fixedAngle: {x: 0, y: 0}
     lookPoints: []
     cameraMode: 0
-    hidePerson: 0
   isFreezed: 0
 --- !u!114 &303120927023259929
 MonoBehaviour:
@@ -2320,7 +2318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openCloseEvents: 0
-  openCloseWindow: 0
+  openCloseWindow: 1
   selectedToolbar: 0
   unlockCursorOnStart: 0
   showCursorOnStart: 0

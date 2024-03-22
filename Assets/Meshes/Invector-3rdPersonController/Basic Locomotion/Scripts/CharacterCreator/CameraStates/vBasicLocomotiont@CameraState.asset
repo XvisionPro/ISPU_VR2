@@ -41,7 +41,6 @@ MonoBehaviour:
       eulerAngle: {x: -0, y: 0, z: 0}
       freeRotation: 0
     cameraMode: 0
-    hidePerson: 0
   - Name: Sprinting
     forward: -1
     right: 0
@@ -69,7 +68,6 @@ MonoBehaviour:
       eulerAngle: {x: -0, y: 0, z: 0}
       freeRotation: 0
     cameraMode: 0
-    hidePerson: 0
   - Name: Crouch
     forward: -1
     right: 0.15
@@ -93,7 +91,6 @@ MonoBehaviour:
     fixedAngle: {x: 0, y: 0}
     lookPoints: []
     cameraMode: 0
-    hidePerson: 0
   - Name: Strafing
     forward: -1
     right: 0
@@ -117,7 +114,6 @@ MonoBehaviour:
     fixedAngle: {x: 0, y: 0}
     lookPoints: []
     cameraMode: 0
-    hidePerson: 0
   - Name: Pendulum
     forward: -1
     right: 0.28
@@ -145,7 +141,6 @@ MonoBehaviour:
       eulerAngle: {x: 18.395494, y: 3.0748887, z: 0.00039740835}
       freeRotation: 1
     cameraMode: 2
-    hidePerson: 0
   - Name: Sliding
     forward: -1
     right: 0
@@ -181,11 +176,10 @@ MonoBehaviour:
       eulerAngle: {x: 2.0625482, y: 271.75256, z: -0.00016467154}
       freeRotation: 0
     cameraMode: 2
-    hidePerson: 0
   - Name: Object
     forward: -0.1
     right: 0
-    defaultDistance: -0.4
+    defaultDistance: -0.56
     maxDistance: 3
     minDistance: 0.5
     height: 1.61
@@ -193,8 +187,8 @@ MonoBehaviour:
     smoothDamp: 0
     xMouseSensitivity: 3
     yMouseSensitivity: 3
-    yMinLimit: -84.46216
-    yMaxLimit: 35.53784
+    yMinLimit: -61.91236
+    yMaxLimit: 58.08764
     xMinLimit: -360
     xMaxLimit: 360
     rotationOffSet: {x: 0, y: 0, z: 0}
@@ -205,4 +199,3 @@ MonoBehaviour:
     fixedAngle: {x: 0, y: 0}
     lookPoints: []
     cameraMode: 0
-    hidePerson: 1
