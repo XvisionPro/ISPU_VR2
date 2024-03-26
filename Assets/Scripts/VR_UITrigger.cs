@@ -10,11 +10,14 @@ public class VR_UITrigger : MonoBehaviour
 {
     public static vThirdPersonInput inputInstance;
     public static vThirdPersonCamera cameraInstance;
-
-    private Canvas[] canvases;
     public Camera[] cameras;
+    public UnityEvent OnInteractEvent;
+
+    #region variables
+    private Canvas[] canvases;
     private GenericInput cameraSwitch = new GenericInput("Switch", "", "");
     private int _currentCamera;
+    #endregion
     public int currentCamera 
     {
         get
@@ -22,22 +25,19 @@ public class VR_UITrigger : MonoBehaviour
             return _currentCamera;
         }
         set {
-            if(_currentCamera + value > cameras.Length)
+            if(_currentCamera + value >= cameras.Length)
             {
-                _currentCamera = cameras.Length - (value);
+                _currentCamera = 0;
             }
-            if(_currentCamera + value < 0)
+            else if(_currentCamera + value < 0)
             {
                 _currentCamera = cameras.Length - 1;
             }
             else { 
-                _currentCamera = 0; // HACK: По сути не нужно
+                _currentCamera = value;
             }
         }
     }
-
-
-    public UnityEvent OnInteractEvent;
 
     void Awake()
     {
