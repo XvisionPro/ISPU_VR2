@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Invector.vCharacterController
@@ -42,6 +44,11 @@ namespace Invector.vCharacterController
         private bool fade;
         #endregion
 
+        #region Interaction Variables
+        [Header("Interaction")]
+        public TextMeshProUGUI interactText;
+        #endregion
+
         #endregion
 
         private static vHUDController _instance;
@@ -64,6 +71,8 @@ namespace Invector.vCharacterController
             InitFadeText();
             if (debugPanel != null)
                 debugText = debugPanel.GetComponentInChildren<Text>();
+            // Выключение текста при старте
+            interactText.enabled = false;
         }
 
         public void Init(vThirdPersonController cc)
@@ -97,6 +106,18 @@ namespace Invector.vCharacterController
             ChangeInputDisplay();
             ShowDamageSprite();
             FadeEffect();
+        }
+
+        public void ShowInteract(GenericInput input)
+        {
+            interactText.text = "Нажмите E"; //TODO: Переписать на связь с Input'ами (по сути переписать Input System)
+            interactText.enabled = true;
+        }
+
+        public void HideInteract()
+        {
+            interactText.enabled = false;
+            interactText.text = "";
         }
 
         public void ShowText(string message, float textTime = 2f, float fadeTime = 0.5f)

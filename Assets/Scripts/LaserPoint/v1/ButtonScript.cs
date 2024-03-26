@@ -16,8 +16,8 @@ public class ButtonScript : Button
     void Start()
     {
         if (outline == null) outline = gameObject.GetComponent<Outline>();
-        onClick.RemoveAllListeners();
-        onClick.AddListener(Click);
+        //onClick.RemoveAllListeners();
+        //onClick.AddListener(Click);
     }
 
     public void Activete()
@@ -52,17 +52,17 @@ public class ButtonScript : Button
         }
     }
 
-    private void OnMouseOver()
-    {
-        if (outline != null) outline.enabled = false;
-        Debug.Log("Over");
-    }
+    //private void OnMouseOver()
+    //{
+    //    if (outline != null) outline.enabled = false;
+    //    Debug.Log("Over");
+    //}
 
-    private void OnMouseEnter()
-    {
-        if (outline != null) outline.enabled = true;
-        Debug.Log("Enter");
-    }
+    //private void OnMouseEnter()
+    //{
+    //    if (outline != null) outline.enabled = true;
+    //    Debug.Log("Enter");
+    //}
 
     public void Click()
     {

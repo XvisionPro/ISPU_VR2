@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class VR_UITrigger : MonoBehaviour
 {
@@ -49,6 +50,11 @@ public class VR_UITrigger : MonoBehaviour
         }
         foreach (var item in cameras)
         {
+            PhysicsRaycaster physicsRaycaster = item.GetComponent<PhysicsRaycaster>();
+            if (physicsRaycaster == null)
+            {
+                Camera.main.gameObject.AddComponent<PhysicsRaycaster>();
+            }
             item.enabled = false;
         }
     }
@@ -102,7 +108,9 @@ public class VR_UITrigger : MonoBehaviour
             {
                 item.EnterTrigger(inputInstance);
             }
-            
+
+            //TODO: Сделать UI отображение
+            inputInstance.hud.ShowInteract(inputInstance.actionInput);
         }
     }
 
@@ -115,6 +123,7 @@ public class VR_UITrigger : MonoBehaviour
                 item.enabled = false;
             }
             inputInstance.onActionButtonDown = new UnityEvent();
+            inputInstance.hud.HideInteract();
         }
     }
 

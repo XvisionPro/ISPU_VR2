@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class Btn3D: MonoBehaviour
+public class Btn3D: MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     /*public static Action<string> onBtnDown;
 
     public class TestStringEvent : UnityEvent<string>
     {
     }*/
-
-    //public static TestStringEvent testStringEvent = new TestStringEvent();
 
     public Highlight highlight;
     private bool btnON = false;
@@ -44,15 +39,15 @@ public class Btn3D: MonoBehaviour
         Callback = _callback;
     }
 
-    private void OnMouseOver()
-    {
-        if (highlight != null) highlight.ToggleHighlight(false);
-    }
+    //private void OnMouseOver()
+    //{
+    //    if (highlight != null) highlight.ToggleHighlight(false);
+    //}
 
-    private void OnMouseEnter()
-    {
-        if (highlight != null) highlight.ToggleHighlight(true);
-    }
+    //private void OnMouseEnter()
+    //{
+    //    if (highlight != null) highlight.ToggleHighlight(true);
+    //}
 
     public void Click()
     {
@@ -69,8 +64,20 @@ public class Btn3D: MonoBehaviour
             needPos = basePos;
         }
 
-        //Debug.Log("Btn3D down");
-        //onBtnDown("btn2");
-        //testStringEvent.Invoke("btn");
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        Click();
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (highlight != null) highlight.ToggleHighlight(true);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (highlight != null) highlight.ToggleHighlight(false);
     }
 }
