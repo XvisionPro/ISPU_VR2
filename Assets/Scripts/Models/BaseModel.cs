@@ -56,6 +56,7 @@ public class BaseModel : MonoBehaviour
         });
 
         sheme.SetActive(false);
+        setDefault();
     }
 
     public void initBaseChild()
