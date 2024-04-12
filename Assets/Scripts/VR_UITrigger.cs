@@ -11,13 +11,15 @@ public class VR_UITrigger : MonoBehaviour
 {
     public static vThirdPersonInput inputInstance;
     public static vThirdPersonCamera cameraInstance;
-    public Camera[] cameras;
+    [SerializeField]
+    private Camera[] cameras;
     public UnityEvent OnInteractEvent;
 
     #region variables
     private Canvas[] canvases;
     private GenericInput cameraSwitch = new GenericInput("Switch", "", "");
     private int _currentCamera;
+    private bool isAction = false;
     #endregion
     public int currentCamera 
     {
@@ -48,6 +50,7 @@ public class VR_UITrigger : MonoBehaviour
         {
             item.enabled = false;
         }
+        //TODO: Сделать проверку на наличие камер в cameras. Если камер нет, то основная камера не подключается
         foreach (var item in cameras)
         {
             PhysicsRaycaster physicsRaycaster = item.GetComponent<PhysicsRaycaster>();
@@ -71,12 +74,13 @@ public class VR_UITrigger : MonoBehaviour
 
     private void inputHandler()
     {
-        if (inputInstance.isAction && cameraSwitch.GetButtonDown())
+        if (inputInstance.isAction && cameraSwitch.GetButtonDown() && isAction)
         {
             Debug.Log(cameraSwitch.GetAxis());
             if (cameraSwitch.GetAxis() > 0) //TODO: Сделать так, чтоб в обе стороны была циклическая смена камеры
             {
                 changeCamera(false);
+                Debug.Log(cameras.ToString());
             }
             else
             {
@@ -111,6 +115,7 @@ public class VR_UITrigger : MonoBehaviour
 
             //TODO: Сделать UI отображение
             inputInstance.hud.ShowInteract(inputInstance.actionInput);
+            isAction = true; //Я в коллайдере
         }
     }
 
@@ -124,14 +129,22 @@ public class VR_UITrigger : MonoBehaviour
             }
             inputInstance.onActionButtonDown = new UnityEvent();
             inputInstance.hud.HideInteract();
+            isAction = false;// Я не в коллайдере
         }
     }
 
     private void changeCamera(bool isReverse)
     {
-        cameras[currentCamera].enabled = !cameras[currentCamera].enabled;
-        currentCamera += isReverse ? -1 : 1; //TODO: Переделать на Axis 
-        cameras[currentCamera].enabled = !cameras[currentCamera].enabled;
+        if(cameras.Length > 1)
+        {
+            cameras[currentCamera].enabled = !cameras[currentCamera].enabled;
+            currentCamera += isReverse ? -1 : 1; //TODO: Переделать на Axis 
+            cameras[currentCamera].enabled = !cameras[currentCamera].enabled;
+        }
+        else
+        {
+
+        }
     }
 
     public void FreezeMovement()
