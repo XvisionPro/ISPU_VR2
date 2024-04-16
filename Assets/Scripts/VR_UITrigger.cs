@@ -149,6 +149,7 @@ public class VR_UITrigger : MonoBehaviour
 
     public void FreezeMovement()
     {
+        // TODO:  Надо отключить спринт
         if (inputInstance.isAction)
         {
             cameraInstance.FreezeCamera();

@@ -1609,6 +1609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4676236029289480627}
   - component: {fileID: 7600001741441599846}
+  - component: {fileID: 3766467117112485921}
   m_Layer: 6
   m_Name: 3D Model
   m_TagString: PlayerUI
@@ -1655,6 +1656,14 @@ CapsuleCollider:
   m_Height: 2.03
   m_Direction: 1
   m_Center: {x: 0, y: 0.83, z: 0}
+--- !u!81 &3766467117112485921
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096776403589103092}
+  m_Enabled: 1
 --- !u!1 &6685647366962286175
 GameObject:
   m_ObjectHideFlags: 0
