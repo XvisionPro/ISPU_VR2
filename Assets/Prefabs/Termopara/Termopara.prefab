@@ -280,7 +280,8 @@ GameObject:
   - component: {fileID: 5792420556378970646}
   - component: {fileID: 2137825637716820595}
   - component: {fileID: 7413261076587785257}
-  - component: {fileID: 4125793184948536559}
+  - component: {fileID: 298596082273626772}
+  - component: {fileID: 2278077182737199308}
   m_Layer: 0
   m_Name: dts065_rt100_v3_100__1__001
   m_TagString: Untagged
@@ -374,7 +375,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.016364, y: 0.0059059975, z: 0.016378}
   m_Center: {x: 0.00008099429, y: 0.060942996, z: -0.0010920002}
---- !u!114 &4125793184948536559
+--- !u!114 &298596082273626772
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -383,18 +384,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1033102695635462064}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d5803618349f443b601523011ec8d6, type: 3}
+  m_Script: {fileID: 11500000, guid: cebb84107ce0afc459b1deed9ffe57ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 30
-  translationSpeed: 3
-  stoppingDistance: 2
-  parent: {fileID: 0}
-  child: {fileID: 4599565744697540844}
-  isRotateOpen: 0
-  isRotateClose: 0
-  flagIsOpen: 0
-  provod: {fileID: 0}
+  animation: {fileID: 2278077182737199308}
+  animName: Cup
+  isForward: 1
+--- !u!111 &2278077182737199308
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033102695635462064}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 537256950e323d140913c1785ce5b406, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1323611350097566639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,7 +1687,7 @@ Transform:
   - {fileID: 5507836559509887262}
   - {fileID: 8879247382406716563}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8515182031121400899
 MeshFilter:
@@ -1740,15 +1751,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce4a3afb1237634696745d5d4b80c12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempNagreva: {fileID: 0}
-  Temp: {fileID: 0}
   provodLeft: {fileID: 5181593811780048529}
   provodRight: {fileID: 7068161744613587386}
-  EdsInp: {fileID: 0}
-  EdsOut: {fileID: 0}
-  TempOut: {fileID: 0}
-  GradLeft: {fileID: 0}
-  GradRight: {fileID: 0}
 --- !u!1 &5547171531855032863
 GameObject:
   m_ObjectHideFlags: 0
