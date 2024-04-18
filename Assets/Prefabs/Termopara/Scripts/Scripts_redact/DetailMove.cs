@@ -10,7 +10,7 @@ public class DetailMove : MonoBehaviour
 
     public new Animation animation;
     public string animName;
-    [SerializeField] private bool isForward = true;
+    [SerializeField] public bool isForward = true;
 
 
     private void CheckAllowed()
