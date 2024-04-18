@@ -13,6 +13,10 @@ TagManager:
   - Action
   - LadderTrigger
   - AutoCrouch
+  - provodleft
+  - provodright
+  - shaibaleft
+  - shaibaright
   layers:
   - Default
   - TransparentFX
@@ -25,7 +29,7 @@ TagManager:
   - Solid object (transmits rays)
   - Ghost
   - Light
-  - 
+  - HeadTrack
   - Post Processing
   - 
   - 
