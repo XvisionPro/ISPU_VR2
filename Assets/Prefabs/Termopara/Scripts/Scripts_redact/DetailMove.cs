@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class DetailMove : MonoBehaviour
 {
-    public CapActivate Cup;
     public DetailMove parent;
+    public DetailMove child;
+    [SerializeField] public List<DetailMove> childMore = new List<DetailMove>();
     public bool Allow = false;
 
     public new Animation animation;
@@ -15,33 +16,78 @@ public class DetailMove : MonoBehaviour
 
     private void CheckAllowed()
     {
-        if (Cup == null)
+        if (childMore.Count == 0)
         {
             if (parent != null)
             {
-                Allow = !parent.isForward;
-                Debug.Log("Крышка нет. Есть родитель");
-                Debug.Log(Allow);
+                if (child != null)
+                {
+                    if ((parent.isForward == false) && (isForward == true))
+                    {
+                        Allow = true;
+                    }
+                    else if ((child.isForward == true) && (isForward == false))
+                    {
+                        Allow = true;
+                    }
+                    else
+                    {
+                        Allow = false;
+                    }
+                }
+                else
+                {
+                    if (parent.isForward == false)
+                    {
+                        Allow = true;
+                    }
+                    else { Allow = false; }
+                }
+            }
+            else
+            {
+                if (child != null)
+                {
+                    if (child.isForward == true)
+                    {
+                        Allow = true;
+                    }
+                    else
+                    {
+                        Allow = false;
+                    }
+                }
+                else
+                {
+                    Allow = true;
+                }
             }
         }
         else
         {
-            Allow = !Cup.isForward;
-            Debug.Log("Крышка есть");
-            Debug.Log(Allow);
+            foreach (DetailMove detail in childMore)
+            {
+                if (detail.isForward == false)
+                {
+                    Allow = false;
+                    return;
+                }
+                else
+                {
+                    Allow = true;
+                }
+            }
         }
     }
 
     private void OnMouseDown()
     {
-        Debug.Log("Проверка");
         CheckAllowed();
         if (Allow)
         {
 
             if (isForward)
             {
-                Debug.Log("Проигрываеться на прямую");
                 animation[animName].speed = 1;
                 animation.Play(animName);
                 isForward = false;

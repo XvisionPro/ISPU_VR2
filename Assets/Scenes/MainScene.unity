@@ -7059,7 +7059,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5855010477151389659}
   m_LocalRotation: {x: -0.003269263, y: -0.0032011848, z: 0.010383743, w: 0.9999357}
-  m_LocalPosition: {x: -0.016595192, y: 0.08315423, z: 0.013259875}
+  m_LocalPosition: {x: -0.01659519, y: 0.08315423, z: 0.01325987}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7222,24 +7222,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &298596083250975750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033102696671402274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cebb84107ce0afc459b1deed9ffe57ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animation: {fileID: 2278077183706025566}
-  child:
-  - {fileID: 3837421896483899964}
-  Allow: 1
-  animName: Cup
-  isForward: 1
 --- !u!33 &302270117069453796
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7618,9 +7600,10 @@ GameObject:
   - component: {fileID: 5110091163009471825}
   - component: {fileID: 6078856129607875473}
   - component: {fileID: 2707035329840680218}
-  - component: {fileID: 4978951843576953849}
+  - component: {fileID: 6078856129607875475}
+  - component: {fileID: 6078856129607875474}
   m_Layer: 0
-  m_Name: Gaika2left
+  m_Name: BoltLeft3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8693,7 +8676,7 @@ GameObject:
   - component: {fileID: 5792420555275822212}
   - component: {fileID: 2137825638685670625}
   - component: {fileID: 7413261077766460091}
-  - component: {fileID: 298596083250975750}
+  - component: {fileID: 7413261077766460092}
   - component: {fileID: 2278077183706025566}
   m_Layer: 0
   m_Name: Cup
@@ -9291,6 +9274,8 @@ GameObject:
   - component: {fileID: 2754309300862477972}
   - component: {fileID: 2072922081341833781}
   - component: {fileID: 8906886748403980479}
+  - component: {fileID: 8906886748403980481}
+  - component: {fileID: 8906886748403980480}
   m_Layer: 0
   m_Name: PuckRight2
   m_TagString: Untagged
@@ -9422,7 +9407,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1436369898530215770}
   m_LocalRotation: {x: -0.008686643, y: -0.008686821, z: 0.00000043671213, w: 0.99992454}
-  m_LocalPosition: {x: -0.016022997, y: 0.08366939, z: 0.013300005}
+  m_LocalPosition: {x: -0.016023, y: 0.08366939, z: 0.01330001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18383,8 +18368,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596e8c5193334f643b5594b22ef00a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cup: {fileID: 298596083250975750}
-  parent: {fileID: 0}
+  parent: {fileID: 7413261077766460092}
+  child: {fileID: 8906886748403980480}
+  childMore: []
   Allow: 0
   animation: {fileID: 3837421896483899963}
   animName: BoltRight1
@@ -18461,9 +18447,10 @@ GameObject:
   - component: {fileID: 1853347584052784175}
   - component: {fileID: 8221131470228533828}
   - component: {fileID: 7256176201372369056}
-  - component: {fileID: 6847592385831522646}
+  - component: {fileID: 8221131470228533830}
+  - component: {fileID: 8221131470228533829}
   m_Layer: 0
-  m_Name: Shaiba2left
+  m_Name: PuckLeft4
   m_TagString: shaibaleft
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20073,9 +20060,10 @@ GameObject:
   - component: {fileID: 480941819851918238}
   - component: {fileID: 2293867645322568107}
   - component: {fileID: 4283050214270835534}
-  - component: {fileID: 8255561799848301266}
+  - component: {fileID: 8849639539207959738}
+  - component: {fileID: 8849639539207959737}
   m_Layer: 0
-  m_Name: Gaika1left
+  m_Name: BoltLeft1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20683,7 +20671,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393657794181398468}
   m_LocalRotation: {x: -0.017083675, y: -0.0167323, z: 0.010381553, w: 0.9996602}
-  m_LocalPosition: {x: -0.018346863, y: 0.08488161, z: 0.0074604657}
+  m_LocalPosition: {x: -0.01834686, y: 0.08488161, z: 0.007460466}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21003,27 +20991,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!114 &4978951843576953849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393657794181398468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d5803618349f443b601523011ec8d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 500
-  translationSpeed: 0.5
-  stoppingDistance: 0.7
-  parent: {fileID: 6232738687134045115}
-  child: {fileID: 6847592385831522646}
-  isRotateOpen: 0
-  isRotateClose: 0
-  flagIsOpen: 0
-  provod: {fileID: 0}
 --- !u!23 &4984437948515980812
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21380,7 +21347,7 @@ MonoBehaviour:
   provodIsOpening: 0
   provodIsClosing: 0
   isOpen: 0
-  shaiba2: {fileID: 6847592385831522646}
+  shaiba2: {fileID: 0}
 --- !u!4 &5183675167450538150
 Transform:
   m_ObjectHideFlags: 0
@@ -21560,9 +21527,10 @@ GameObject:
   - component: {fileID: 7711757057228173426}
   - component: {fileID: 7704497852361543582}
   - component: {fileID: 4572716719704736517}
-  - component: {fileID: 6232738687134045115}
+  - component: {fileID: 8836326696695725416}
+  - component: {fileID: 8836326696695725415}
   m_Layer: 0
-  m_Name: Shaiba1left
+  m_Name: PuckLeft2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23201,6 +23169,8 @@ GameObject:
   - component: {fileID: 3285951613838409811}
   - component: {fileID: 2736682917706514212}
   - component: {fileID: 2679986665710101091}
+  - component: {fileID: 5855010477151389661}
+  - component: {fileID: 5855010477151389660}
   m_Layer: 0
   m_Name: BoltRight3
   m_TagString: Untagged
@@ -23208,6 +23178,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5855010477151389660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5855010477151389659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596e8c5193334f643b5594b22ef00a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 8906886748403980480}
+  child: {fileID: 8012825570143814523}
+  childMore: []
+  Allow: 0
+  animation: {fileID: 5855010477151389661}
+  animName: BoltRight3
+  isForward: 1
+--- !u!111 &5855010477151389661
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5855010477151389659}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 53f7770fc4b336a4993c5a97a76305e2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &5855325683863984806
 GameObject:
   m_ObjectHideFlags: 0
@@ -23668,6 +23673,41 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6078856129607875474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393657794181398468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596e8c5193334f643b5594b22ef00a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 8836326696695725415}
+  child: {fileID: 8221131470228533829}
+  childMore: []
+  Allow: 0
+  animation: {fileID: 6078856129607875475}
+  animName: BoltLeft3
+  isForward: 1
+--- !u!111 &6078856129607875475
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393657794181398468}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: bdf32747febd2374b86b49c5b1271515, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &6079773506678339659
 GameObject:
   m_ObjectHideFlags: 0
@@ -23716,6 +23756,8 @@ GameObject:
   - component: {fileID: 8012825570143814522}
   - component: {fileID: 345885469192340628}
   - component: {fileID: 4922307308907945094}
+  - component: {fileID: 8012825570143814524}
+  - component: {fileID: 8012825570143814523}
   m_Layer: 0
   m_Name: PuckRight4
   m_TagString: shaibaright
@@ -23802,27 +23844,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307099015089538206}
   m_Mesh: {fileID: -9126225423571551157, guid: ae51dea1c60bb114dbf756b0bac06838, type: 3}
---- !u!114 &6232738687134045115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5292832376206809274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d5803618349f443b601523011ec8d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 500
-  translationSpeed: 0.5
-  stoppingDistance: 0.75
-  parent: {fileID: 8255561799848301266}
-  child: {fileID: 4978951843576953849}
-  isRotateOpen: 0
-  isRotateClose: 0
-  flagIsOpen: 0
-  provod: {fileID: 0}
 --- !u!4 &6251974598472113712
 Transform:
   m_ObjectHideFlags: 0
@@ -24140,7 +24161,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6097863063458855361}
   m_LocalRotation: {x: -0.002673037, y: -0.0026730448, z: -0.000000021639229, w: 0.9999929}
-  m_LocalPosition: {x: -0.017064303, y: 0.08271524, z: 0.013339983}
+  m_LocalPosition: {x: -0.0170643, y: 0.08271524, z: 0.01333998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25455,27 +25476,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6847592385831522646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3877650292142025048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d5803618349f443b601523011ec8d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 500
-  translationSpeed: 0.5
-  stoppingDistance: 0.65
-  parent: {fileID: 4978951843576953849}
-  child: {fileID: 0}
-  isRotateOpen: 0
-  isRotateClose: 0
-  flagIsOpen: 0
-  provod: {fileID: 5181593810811119619}
 --- !u!1 &6870852288606959465
 GameObject:
   m_ObjectHideFlags: 0
@@ -26718,9 +26718,9 @@ Transform:
   - {fileID: 1503585386543409247}
   - {fileID: 149689758089986454}
   - {fileID: 6446511797693987694}
-  - {fileID: 4802656853782363158}
   - {fileID: 8849639539207959736}
   - {fileID: 8836326696695725414}
+  - {fileID: 4802656853782363158}
   - {fileID: 3123051838747087947}
   m_Father: {fileID: 5371433280090667286}
   m_RootOrder: 3
@@ -26856,6 +26856,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.016364, y: 0.0059059975, z: 0.016378}
   m_Center: {x: 0.00008099429, y: 0.060942996, z: -0.0010920002}
+--- !u!114 &7413261077766460092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033102696671402274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596e8c5193334f643b5594b22ef00a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 0}
+  child: {fileID: 0}
+  childMore:
+  - {fileID: 3837421896483899964}
+  - {fileID: 8849639539207959737}
+  Allow: 0
+  animation: {fileID: 2278077183706025566}
+  animName: Cup
+  isForward: 1
 --- !u!23 &7421741536930943450
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28152,6 +28173,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6097863063458855361}
   m_Mesh: {fileID: 7733717212360752527, guid: 55590a690aa8e1d47a9f3e08a301b572, type: 3}
+--- !u!114 &8012825570143814523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6097863063458855361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596e8c5193334f643b5594b22ef00a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 5855010477151389660}
+  child: {fileID: 0}
+  childMore: []
+  Allow: 0
+  animation: {fileID: 8012825570143814524}
+  animName: PuckRight4
+  isForward: 1
+--- !u!111 &8012825570143814524
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6097863063458855361}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: bd3c51d8e456f8c4589d3a5ef80614ad, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!23 &8028022328389600844
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28536,6 +28592,41 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8221131470228533829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3877650292142025048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596e8c5193334f643b5594b22ef00a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 6078856129607875474}
+  child: {fileID: 0}
+  childMore: []
+  Allow: 0
+  animation: {fileID: 8221131470228533830}
+  animName: PuckLeft4
+  isForward: 1
+--- !u!111 &8221131470228533830
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3877650292142025048}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 7f3c85d8a5b2693468b3c32e10f25b64, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!33 &8246954486774104679
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -28559,27 +28650,6 @@ Transform:
   m_Father: {fileID: 349543857884933654}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8255561799848301266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4482041366093339084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d5803618349f443b601523011ec8d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 500
-  translationSpeed: 0.5
-  stoppingDistance: 0.8
-  parent: {fileID: 0}
-  child: {fileID: 6232738687134045115}
-  isRotateOpen: 0
-  isRotateClose: 0
-  flagIsOpen: 0
-  provod: {fileID: 0}
 --- !u!1 &8261306395343070056 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4383346634310120866, guid: 606ada5a4812916438554ca917571774, type: 3}
@@ -30006,13 +30076,48 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5292832376206809274}
   m_LocalRotation: {x: -0.008130286, y: -0.008130194, z: 0.00000008606747, w: 0.99993396}
-  m_LocalPosition: {x: -0.017752161, y: 0.08542018, z: 0.0074999863}
+  m_LocalPosition: {x: -0.01775216, y: 0.08542018, z: 0.007499986}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7375426153885573883}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8836326696695725415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5292832376206809274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596e8c5193334f643b5594b22ef00a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 8849639539207959737}
+  child: {fileID: 6078856129607875474}
+  childMore: []
+  Allow: 0
+  animation: {fileID: 8836326696695725416}
+  animName: PuckLeft2
+  isForward: 1
+--- !u!111 &8836326696695725416
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5292832376206809274}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 06e605554d15e4f4abed1c9eb7caa492, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!23 &8837104068118992189
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30096,6 +30201,41 @@ Transform:
   m_Father: {fileID: 7375426153885573883}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.19}
+--- !u!114 &8849639539207959737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4482041366093339084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596e8c5193334f643b5594b22ef00a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 7413261077766460092}
+  child: {fileID: 8836326696695725415}
+  childMore: []
+  Allow: 0
+  animation: {fileID: 8849639539207959738}
+  animName: BoltLeft1
+  isForward: 1
+--- !u!111 &8849639539207959738
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4482041366093339084}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: f2a69d6763969d04dbd0dd33ef5b50aa, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!33 &8862194133309112918
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -30230,6 +30370,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0027750002, y: 0.002788, z: 0.0035570003}
   m_Center: {x: 0.000008373405, y: 0.00000731973, z: 0.000011573953}
+--- !u!114 &8906886748403980480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436369898530215770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596e8c5193334f643b5594b22ef00a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 3837421896483899964}
+  child: {fileID: 5855010477151389660}
+  childMore: []
+  Allow: 0
+  animation: {fileID: 8906886748403980481}
+  animName: PuckRight2
+  isForward: 1
+--- !u!111 &8906886748403980481
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436369898530215770}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 891a97d8074e7dd41b352127eb6b5f17, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!33 &8916413181420176711
 MeshFilter:
   m_ObjectHideFlags: 0
